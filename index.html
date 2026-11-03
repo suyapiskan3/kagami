@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#FAF6F0">
   <meta name="format-detection" content="telephone=no">
   <title>Кагами — салон красоты в Южно-Сахалинске</title>
-  <meta name="description" content="Салон красоты «Кагами» в Южно-Сахалинске, ул. Чехова, 41. Стрижки, сложное окрашивание, укладки и уход за волосами. Онлайн-запись.">
+  <meta name="description" content="Салон красоты «Кагами» в Южно-Сахалинске, ул. Чехова, 41. Волосы, педикюр, косметология, LPG-массаж, лазерная эпиляция и пирсинг. Онлайн-запись.">
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com/3.4.16"></script>
@@ -170,7 +170,7 @@
             Твоё пространство <em class="text-bronze-600">красоты</em> и&nbsp;уверенности в&nbsp;<span class="whitespace-nowrap">Южно-Сахалинске</span>
           </h1>
           <p class="mt-8 text-base sm:text-lg text-slate-600 max-w-xl leading-loose">
-            Авторские стрижки, сложное окрашивание, укладки и уход за волосами. Спокойная атмосфера, внимательные мастера и профессиональная косметика.
+            Волосы, педикюр, косметология, LPG-массаж, лазерная эпиляция и пирсинг — всё в одном пространстве. Спокойная атмосфера, внимательные мастера и профессиональная косметика.
           </p>
 
           <div class="mt-10 sm:mt-12 flex flex-col sm:flex-row gap-4">
@@ -262,7 +262,7 @@
           <div class="reveal text-center">
             <span class="mx-auto w-16 h-16 rounded-full border border-bronze-300 text-bronze-600 flex items-center justify-center"><i class="fa-solid fa-droplet"></i></span>
             <h3 class="mt-6 font-serif text-xl tracking-wide">Профессиональная косметика</h3>
-            <p class="mt-3 text-sm text-slate-500 leading-relaxed max-w-xs mx-auto">Бережные красители и уходовые составы для здоровья волос.</p>
+            <p class="mt-3 text-sm text-slate-500 leading-relaxed max-w-xs mx-auto">Проверенные средства для волос, кожи лица и тела.</p>
           </div>
           <div class="reveal text-center">
             <span class="mx-auto w-16 h-16 rounded-full border border-bronze-300 text-bronze-600 flex items-center justify-center"><i class="fa-solid fa-mug-saucer"></i></span>
@@ -281,10 +281,22 @@
             <p class="flex items-center gap-4 text-[11px] uppercase tracking-[0.35em] text-bronze-700"><span class="w-10 h-px bg-bronze-400"></span> Каталог услуг</p>
             <h2 class="mt-6 font-serif font-normal text-4xl sm:text-5xl tracking-wide">Услуги и цены</h2>
           </div>
-          <p class="text-sm text-slate-500 max-w-sm leading-relaxed">Итоговая стоимость зависит от длины и густоты волос и уточняется на консультации.</p>
+          <p class="text-sm text-slate-500 max-w-sm leading-relaxed">Указаны начальные цены. Точная стоимость зависит от объёма работы и уточняется на консультации.</p>
         </div>
 
-        <div id="servicesList" class="mt-14 sm:mt-20 border-t border-bronze-200"></div>
+        <div id="serviceTabs" role="tablist" aria-label="Разделы услуг" class="no-scrollbar mt-14 sm:mt-20 -mx-4 px-4 sm:mx-0 sm:px-0 flex sm:flex-wrap gap-2 sm:gap-3 overflow-x-auto"></div>
+
+        <div id="servicesPanel" class="mt-10 sm:mt-14">
+          <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 pb-6 border-b border-bronze-200">
+            <div>
+              <h3 id="catTitle" class="font-serif text-3xl sm:text-4xl tracking-wide"></h3>
+              <p id="catDesc" class="mt-3 text-sm text-slate-500 leading-relaxed max-w-xl"></p>
+            </div>
+            <p id="catCount" class="text-[11px] uppercase tracking-[0.25em] text-bronze-700 whitespace-nowrap"></p>
+          </div>
+          <div id="servicesList"></div>
+          <p id="catNote" class="hidden mt-6 text-xs text-slate-500"><i class="fa-solid fa-circle-info text-bronze-500 mr-1"></i> Есть противопоказания, необходима консультация специалиста.</p>
+        </div>
 
         <div class="reveal mt-12 flex flex-col sm:flex-row items-center justify-between gap-6 bg-white/70 border border-bronze-200 rounded-3xl px-6 sm:px-10 py-7">
           <p class="text-sm text-center sm:text-left"><span class="font-medium">Скидка 5% при оплате наличными</span> <span class="text-slate-500">— действует на все услуги.</span></p>
@@ -301,9 +313,9 @@
         <div class="reveal text-center max-w-2xl mx-auto">
           <p class="text-[11px] uppercase tracking-[0.35em] text-bronze-700">Команда</p>
           <h2 class="mt-6 font-serif font-normal text-4xl sm:text-5xl tracking-wide">Наши мастера</h2>
-          <p class="mt-6 text-slate-600 leading-loose">Мастера регулярно проходят обучение и работают в современных техниках окрашивания и ухода.</p>
+          <p class="mt-6 text-slate-600 leading-loose">Стилисты, мастера педикюра и косметологи, которые регулярно проходят обучение.</p>
         </div>
-        <div id="mastersGrid" class="no-scrollbar mt-14 sm:mt-20 -mx-4 px-4 sm:mx-0 sm:px-0 flex sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8 overflow-x-auto sm:overflow-visible snap-x snap-mandatory scroll-px-4 pb-2 sm:pb-0"></div>
+        <div id="mastersGrid" class="no-scrollbar mt-14 sm:mt-20 -mx-4 px-4 sm:mx-0 sm:px-0 flex sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-8 overflow-x-auto sm:overflow-visible snap-x snap-mandatory scroll-px-4 pb-2 sm:pb-0"></div>
         <p class="sm:hidden mt-4 text-center text-xs text-slate-400 tracking-wide">Листайте вбок, чтобы увидеть всех мастеров</p>
       </div>
     </section>
@@ -502,12 +514,14 @@
 
           <!-- Шаг 1: Услуги -->
           <div class="step" data-step="1">
-            <div id="serviceOptions" class="space-y-3"></div>
+            <div id="modalTabs" class="no-scrollbar -mx-4 px-4 sm:mx-0 sm:px-0 flex sm:flex-wrap gap-2 overflow-x-auto pb-4"></div>
+            <div id="serviceOptions" class="space-y-2.5"></div>
           </div>
 
           <!-- Шаг 2: Мастер -->
           <div class="step hidden" data-step="2">
-            <div id="masterOptions" class="grid sm:grid-cols-3 gap-3"></div>
+            <p id="masterHint" class="hidden mb-4 text-sm text-slate-500"></p>
+            <div id="masterOptions" class="grid sm:grid-cols-2 gap-3"></div>
           </div>
 
           <!-- Шаг 3: Время -->
@@ -582,17 +596,82 @@
   <!-- ===================== JAVASCRIPT ===================== -->
   <script>
     // ---------- Данные ----------
+    // Разделы и прайс (цены «от», по данным салона в 2ГИС, обновлено 24.07.2026)
+    const CATEGORIES = [
+      { id: 'hair',     name: 'Волосы',            icon: 'fa-scissors',        desc: 'Стрижки, окрашивание, укладки и уход. Стоимость зависит от длины и густоты волос.' },
+      { id: 'pedicure', name: 'Педикюр',           icon: 'fa-shoe-prints',     desc: 'Аппаратный педикюр, покрытие и работа с проблемной стопой.' },
+      { id: 'face',     name: 'Уход за лицом',     icon: 'fa-spa',             desc: 'Чистки, пилинги, массаж лица и аппаратные процедуры.' },
+      { id: 'cosmo',    name: 'Косметология',      icon: 'fa-syringe',         desc: 'Инъекционные и лифтинговые процедуры. Проводятся после консультации специалиста.', note: true },
+      { id: 'lpg',      name: 'LPG-массаж',        icon: 'fa-hand-sparkles',   desc: 'Аппаратный массаж тела и лица для тонуса и лифтинга.' },
+      { id: 'laser',    name: 'Лазер',             icon: 'fa-wand-magic-sparkles', desc: 'Лазерная эпиляция и удаление пигментации.', note: true },
+      { id: 'piercing', name: 'Пирсинг',           icon: 'fa-gem',             desc: 'Прокол ушей и косметический пирсинг, подбор украшений.' }
+    ];
+
     const SERVICES = [
-      { id: 'cut',   name: 'Женская стрижка',                 price: 1500, icon: 'fa-scissors',      desc: 'Стрижка с учётом типа волос, формы лица и вашего ритма жизни. Включает мытьё и укладку.', duration: 'от 60 мин' },
-      { id: 'color', name: 'Сложное окрашивание',             price: 4000, icon: 'fa-palette',       desc: 'Airtouch, шатуш, балаяж — мягкие переходы цвета и естественные блики.',                      duration: 'от 3 ч' },
-      { id: 'style', name: 'Укладка и вечерние причёски',     price: 2000, icon: 'fa-wand-magic-sparkles', desc: 'Повседневные и праздничные укладки, причёски для торжеств и фотосессий.',             duration: 'от 60 мин' },
-      { id: 'care',  name: 'Уходовые процедуры для волос',    price: 3000, icon: 'fa-spa',           desc: 'Ботокс и кератин: гладкость, блеск и восстановление структуры волос.',                       duration: 'от 2 ч' }
+      // Волосы
+      { id: 'cut',        cat: 'hair', name: 'Женская стрижка',                                   price: 1500 },
+      { id: 'color',      cat: 'hair', name: 'Сложное окрашивание (Airtouch, шатуш, балаяж)',     price: 4000 },
+      { id: 'dye',        cat: 'hair', name: 'Окрашивание',                                       price: 2500 },
+      { id: 'tone',       cat: 'hair', name: 'Тонирование',                                       price: 2000 },
+      { id: 'style',      cat: 'hair', name: 'Укладка и вечерние причёски',                       price: 2000 },
+      { id: 'care',       cat: 'hair', name: 'Уходовые процедуры (ботокс, кератин)',              price: 3000 },
+      { id: 'dry',        cat: 'hair', name: 'Сушка',                                             price: 400 },
+      // Педикюр
+      { id: 'ped-w',      cat: 'pedicure', name: 'Педикюр женский',                               price: 2500 },
+      { id: 'ped-m',      cat: 'pedicure', name: 'Педикюр мужской',                               price: 3000 },
+      { id: 'ped-foot',   cat: 'pedicure', name: 'Обработка стопы',                               price: 1500 },
+      { id: 'ped-nails',  cat: 'pedicure', name: 'Обработка ногтевых пластин',                    price: 1500 },
+      { id: 'ped-cover',  cat: 'pedicure', name: 'Покрытие лак / гель-лак',                       price: 400 },
+      { id: 'ped-remove', cat: 'pedicure', name: 'Снятие покрытия',                               price: 400 },
+      { id: 'ped-fix',    cat: 'pedicure', name: 'Коррекция',                                     price: 2000 },
+      { id: 'ped-ti',     cat: 'pedicure', name: 'Титановая нить',                                price: 3500 },
+      { id: 'ped-ingrown',cat: 'pedicure', name: 'Работа с вросшим ногтем',                       price: 500 },
+      { id: 'ped-corns',  cat: 'pedicure', name: 'Мозоли / трещины',                              price: 300 },
+      // Уход за лицом
+      { id: 'f-clean',    cat: 'face', name: 'Комбинированная чистка лица',                       price: 7000 },
+      { id: 'f-peel',     cat: 'face', name: 'Пилинг миндальный / молочный',                      price: 6000 },
+      { id: 'f-biopeel',  cat: 'face', name: 'Пилинг-биоревитализант',                            price: 8000 },
+      { id: 'f-gzh',      cat: 'face', name: 'Газожидкостный пилинг аппаратный',                              price: 2000 },
+      { id: 'f-massage',  cat: 'face', name: 'Массаж скульптурный / буккальный',                  price: 2500 },
+      { id: 'f-micro',    cat: 'face', name: 'Микротоки',                                         price: 1700 },
+      { id: 'f-mezostrip',cat: 'face', name: 'Мезо-стрип аппаратный',                             price: 3800 },
+      { id: 'f-hyal',     cat: 'face', name: 'Гиалурокс (холодный лазер)',                        price: 4000 },
+      { id: 'f-carboxy',  cat: 'face', name: 'Карбокситерапия (медицинский газ)',                 price: 600 },
+      // Косметология
+      { id: 'c-biorev',   cat: 'cosmo', name: 'Биоревитализация лица',                            price: 13000 },
+      { id: 'c-meso-face',cat: 'cosmo', name: 'Мезотерапия лица',                                 price: 7000 },
+      { id: 'c-meso-eyes',cat: 'cosmo', name: 'Мезотерапия области глаз',                         price: 7000 },
+      { id: 'c-meso-head',cat: 'cosmo', name: 'Мезотерапия кожи головы',                          price: 7000 },
+      { id: 'c-plasma',   cat: 'cosmo', name: 'Плазмолифтинг',                                    price: 5000 },
+      { id: 'c-relatox',  cat: 'cosmo', name: 'Коррекция морщин Релатокс (1 ед.)',                price: 400 },
+      { id: 'c-lipo-face',cat: 'cosmo', name: 'Липолитик для лица',                               price: 8000 },
+      { id: 'c-lipo-body',cat: 'cosmo', name: 'Липолитик для тела',                               price: 10000 },
+      { id: 'c-collagen', cat: 'cosmo', name: 'Коллагеностимуляция лица и шеи',                   price: 20000 },
+      { id: 'c-pla',      cat: 'cosmo', name: 'Полимолочная кислота, лицо',                       price: 25000 },
+      { id: 'c-vector',   cat: 'cosmo', name: 'Векторный лифтинг лица',                           price: 20000 },
+      { id: 'c-rf-face',  cat: 'cosmo', name: 'Микроигольчатый RF-лифтинг лица',                  price: 25000 },
+      { id: 'c-rf-neck',  cat: 'cosmo', name: 'Микроигольчатый RF-лифтинг шеи и декольте',        price: 20000 },
+      { id: 'c-rf-full',  cat: 'cosmo', name: 'Микроигольчатый RF-лифтинг, комплекс',             price: 40000 },
+      // LPG-массаж
+      { id: 'lpg-body',   cat: 'lpg', name: 'LPG-массаж тела / абонемент',                        price: 2500 },
+      { id: 'lpg-face',   cat: 'lpg', name: 'LPG для лица',                                       price: 1700 },
+      { id: 'lpg-suit',   cat: 'lpg', name: 'Костюм для LPG-массажа',                             price: 3500 },
+      // Лазер
+      { id: 'laser-epil', cat: 'laser', name: 'Лазерная эпиляция тела',                           price: 1500 },
+      { id: 'laser-pigm', cat: 'laser', name: 'Лазерное удаление пигментации',                    price: 600 },
+      // Пирсинг
+      { id: 'p-ears',     cat: 'piercing', name: 'Прокол ушей',                                   price: 3000 },
+      { id: 'p-cosm',     cat: 'piercing', name: 'Пирсинг косметический',                         price: 2000 },
+      { id: 'p-cart',     cat: 'piercing', name: 'Пирсинг хряща / мочки',                         price: 2000 },
+      { id: 'p-replace',  cat: 'piercing', name: 'Замена пирсинга',                               price: 1000 },
+      { id: 'p-jewel',    cat: 'piercing', name: 'Серьги и украшения для пирсинга',               price: 300 }
     ];
 
     const MASTERS = [
-      { id: 'anna',     name: 'Анна',     role: 'Топ-стилист',       exp: '10 лет опыта', initials: 'А', gradient: 'from-cream-100 to-bronze-200', spec: 'Стрижки, вечерние причёски' },
-      { id: 'marina',   name: 'Марина',   role: 'Колорист',          exp: '8 лет опыта',  initials: 'М', gradient: 'from-bronze-50 to-bronze-300',  spec: 'Airtouch, шатуш, балаяж' },
-      { id: 'victoria', name: 'Виктория', role: 'Мастер по уходу',   exp: '6 лет опыта',  initials: 'В', gradient: 'from-white to-bronze-200',      spec: 'Ботокс, кератин, укладки' }
+      { id: 'anna',     name: 'Анна',     role: 'Стилист',            cats: ['hair'],                       exp: '10 лет опыта', initials: 'А', gradient: 'from-cream-100 to-bronze-200', spec: 'Стрижки, укладки, уход за волосами' },
+      { id: 'marina',   name: 'Марина',   role: 'Колорист',           cats: ['hair'],                       exp: '8 лет опыта',  initials: 'М', gradient: 'from-bronze-50 to-bronze-300',  spec: 'Airtouch, шатуш, балаяж, тонирование' },
+      { id: 'victoria', name: 'Виктория', role: 'Мастер педикюра',    cats: ['pedicure', 'piercing'],       exp: '6 лет опыта',  initials: 'В', gradient: 'from-white to-bronze-200',      spec: 'Педикюр, проблемная стопа, пирсинг' },
+      { id: 'elena',    name: 'Елена',    role: 'Косметолог',         cats: ['face', 'cosmo', 'lpg', 'laser'], exp: '9 лет опыта', initials: 'Е', gradient: 'from-cream-200 to-bronze-300', spec: 'Уход за лицом, инъекции, LPG, лазер' }
     ];
 
     const TIMES = ['10:00', '12:00', '14:00', '16:00', '18:00'];
@@ -615,25 +694,53 @@
     }
 
     // ---------- Рендер секций сайта ----------
+    let activeCat = CATEGORIES[0].id;   // раздел каталога на странице
+    let modalCat = CATEGORIES[0].id;    // раздел в форме записи
+
+    const catById = id => CATEGORIES.find(c => c.id === id);
+    const servicesOf = cat => SERVICES.filter(s => s.cat === cat);
+    const minPrice = cat => Math.min(...servicesOf(cat).map(s => s.price));
+
+    function tabClass(active) {
+      return `shrink-0 inline-flex items-center gap-2 rounded-full border px-5 py-3 text-[12px] font-medium uppercase tracking-[0.18em] whitespace-nowrap transition-all duration-300 ${active ? 'bg-slate-900 border-slate-900 text-cream' : 'border-bronze-200 bg-white/60 hover:border-bronze-400 text-slate-700'}`;
+    }
+
     function renderServicesSection() {
-      $('#servicesList').innerHTML = SERVICES.map((s, i) => `
-        <article class="reveal group grid grid-cols-[auto,1fr] sm:grid-cols-[5rem,1fr,auto,auto] items-start sm:items-center gap-x-5 sm:gap-x-8 gap-y-4 py-8 sm:py-10 border-b border-bronze-200 transition-colors duration-500 hover:bg-white/60 sm:px-6 sm:-mx-6 sm:rounded-3xl">
-          <span class="font-serif text-3xl sm:text-4xl text-bronze-400 tracking-wide leading-none">${String(i + 1).padStart(2, '0')}</span>
-          <div>
-            <h3 class="font-serif text-2xl sm:text-[1.75rem] tracking-wide leading-snug">${s.name}</h3>
-            <p class="mt-2 text-sm text-slate-500 leading-relaxed max-w-lg">${s.desc}</p>
-            <p class="mt-3 text-[11px] uppercase tracking-[0.25em] text-bronze-700"><i class="fa-regular fa-clock mr-1"></i> ${s.duration}</p>
-          </div>
-          <div class="col-start-2 sm:col-start-auto flex items-baseline gap-2 whitespace-nowrap">
-            <span class="text-xs uppercase tracking-[0.2em] text-slate-500">от</span>
-            <span class="font-serif text-3xl sm:text-4xl tracking-wide">${formatPrice(s.price)}</span>
-            <span class="font-serif text-2xl text-bronze-500">₽</span>
-          </div>
-          <button data-open-booking data-preselect="${s.id}" class="col-start-2 sm:col-start-auto justify-self-start sm:justify-self-end inline-flex items-center gap-3 border border-slate-900/15 group-hover:border-bronze-400 group-hover:bg-bronze-400 text-[12px] font-medium uppercase tracking-[0.18em] px-6 py-3 rounded-full transition-all duration-500" aria-label="Записаться: ${s.name}">
-            Записаться <i class="fa-solid fa-arrow-right-long"></i>
+      $('#serviceTabs').innerHTML = CATEGORIES.map(c => `
+        <button type="button" role="tab" aria-selected="${c.id === activeCat}" data-cat="${c.id}" class="cat-tab ${tabClass(c.id === activeCat)}">
+          <i class="fa-solid ${c.icon} ${c.id === activeCat ? 'text-bronze-300' : 'text-bronze-500'}"></i> ${c.name}
+        </button>`).join('');
+
+      const cat = catById(activeCat);
+      const list = servicesOf(activeCat);
+      $('#catTitle').textContent = cat.name;
+      $('#catDesc').textContent = cat.desc;
+      $('#catCount').textContent = `${list.length} ${plural(list.length, ['услуга', 'услуги', 'услуг'])} · от ${formatPrice(minPrice(activeCat))} ₽`;
+      $('#catNote').classList.toggle('hidden', !cat.note);
+
+      const listEl = $('#servicesList');
+      listEl.innerHTML = list.map((s, i) => `
+        <div class="group flex items-center gap-4 sm:gap-8 py-5 sm:py-6 border-b border-bronze-200/70 transition-colors duration-300 hover:bg-white/60 sm:px-4 sm:-mx-4 sm:rounded-2xl">
+          <span class="hidden sm:block w-10 font-serif text-xl text-bronze-400">${String(i + 1).padStart(2, '0')}</span>
+          <h4 class="flex-1 min-w-0 font-serif text-lg sm:text-xl tracking-wide leading-snug">${s.name}</h4>
+          <span class="whitespace-nowrap"><span class="text-[11px] uppercase tracking-[0.15em] text-slate-500 mr-1">от</span><span class="font-serif text-xl sm:text-2xl">${formatPrice(s.price)}</span> <span class="font-serif text-bronze-500">₽</span></span>
+          <button data-open-booking data-preselect="${s.id}" class="shrink-0 w-11 h-11 rounded-full border border-bronze-300 group-hover:bg-bronze-400 group-hover:border-bronze-400 flex items-center justify-center transition-all duration-300" aria-label="Записаться: ${s.name}">
+            <i class="fa-solid fa-plus text-sm"></i>
           </button>
-        </article>
-      `).join('');
+        </div>`).join('');
+      listEl.classList.remove('step-enter'); void listEl.offsetWidth; listEl.classList.add('step-enter');
+
+      $$('.cat-tab', $('#serviceTabs')).forEach(btn => btn.addEventListener('click', () => {
+        activeCat = btn.dataset.cat;
+        renderServicesSection();
+      }));
+    }
+
+    function plural(n, forms) {
+      const n10 = n % 10, n100 = n % 100;
+      if (n10 === 1 && n100 !== 11) return forms[0];
+      if (n10 >= 2 && n10 <= 4 && (n100 < 10 || n100 >= 20)) return forms[1];
+      return forms[2];
     }
 
     function renderMastersSection() {
@@ -687,22 +794,32 @@
 
     // ---------- Рендер шагов ----------
     function renderServiceOptions() {
-      $('#serviceOptions').innerHTML = SERVICES.map(s => {
+      $('#modalTabs').innerHTML = CATEGORIES.map(c => {
+        const count = servicesOf(c.id).filter(s => state.services.has(s.id)).length;
+        const active = c.id === modalCat;
+        return `
+        <button type="button" data-cat="${c.id}" class="modal-tab shrink-0 inline-flex items-center gap-2 rounded-full border px-4 py-2.5 text-[11px] font-medium uppercase tracking-[0.15em] whitespace-nowrap transition-all duration-300 ${active ? 'bg-slate-900 border-slate-900 text-cream' : 'border-bronze-200 bg-white/60 hover:border-bronze-400'}">
+          ${c.name}${count ? `<span class="min-w-[1.25rem] h-5 px-1 rounded-full bg-bronze-400 text-slate-900 text-[10px] flex items-center justify-center tracking-normal">${count}</span>` : ''}
+        </button>`;
+      }).join('');
+
+      $('#serviceOptions').innerHTML = servicesOf(modalCat).map(s => {
         const checked = state.services.has(s.id);
         return `
-        <label class="flex items-center gap-4 p-4 sm:p-5 rounded-3xl border cursor-pointer transition-all duration-300 active:scale-[0.99] ${checked ? 'border-bronze-400 bg-white shadow-sm' : 'border-bronze-200 bg-white/50 hover:border-bronze-300 hover:bg-white'}">
+        <label class="flex items-center gap-4 p-4 sm:px-5 rounded-2xl border cursor-pointer transition-all duration-300 active:scale-[0.99] ${checked ? 'border-bronze-400 bg-white shadow-sm' : 'border-bronze-200 bg-white/50 hover:border-bronze-300 hover:bg-white'}">
           <input type="checkbox" class="service-cb sr-only" value="${s.id}" ${checked ? 'checked' : ''}>
           <span class="w-6 h-6 shrink-0 rounded-full border flex items-center justify-center transition-colors ${checked ? 'bg-bronze-400 border-bronze-400 text-slate-900' : 'border-bronze-300'}">
             ${checked ? '<i class="fa-solid fa-check text-[10px]"></i>' : ''}
           </span>
-          <span class="flex-1 min-w-0">
-            <span class="block font-serif text-lg tracking-wide leading-snug">${s.name}</span>
-            <span class="block text-[11px] uppercase tracking-[0.2em] text-slate-500 mt-1">${s.duration}</span>
-          </span>
-          <span class="font-serif text-lg whitespace-nowrap">от ${formatPrice(s.price)} ₽</span>
+          <span class="flex-1 min-w-0 font-serif text-base sm:text-lg tracking-wide leading-snug">${s.name}</span>
+          <span class="font-serif text-base sm:text-lg whitespace-nowrap">от ${formatPrice(s.price)} ₽</span>
         </label>`;
       }).join('');
 
+      $$('.modal-tab').forEach(btn => btn.addEventListener('click', () => {
+        modalCat = btn.dataset.cat;
+        renderServiceOptions();
+      }));
       $$('.service-cb').forEach(cb => cb.addEventListener('change', e => {
         e.target.checked ? state.services.add(e.target.value) : state.services.delete(e.target.value);
         renderServiceOptions();
@@ -710,8 +827,25 @@
       }));
     }
 
+    // Разделы, к которым относятся выбранные услуги
+    function selectedCats() {
+      return [...new Set(SERVICES.filter(s => state.services.has(s.id)).map(s => s.cat))];
+    }
+    // Мастера, которые выполняют все выбранные разделы; если таких нет — все мастера
+    function availableMasters() {
+      const cats = selectedCats();
+      const fit = MASTERS.filter(m => cats.every(c => m.cats.includes(c)));
+      return fit.length ? fit : MASTERS;
+    }
+
     function renderMasterOptions() {
-      $('#masterOptions').innerHTML = MASTERS.map(m => {
+      const list = availableMasters();
+      const allFit = list !== MASTERS || MASTERS.every(m => selectedCats().every(c => m.cats.includes(c)));
+      if (state.master && !list.some(m => m.id === state.master)) state.master = null;
+      const hint = $('#masterHint');
+      hint.classList.toggle('hidden', allFit);
+      hint.textContent = 'Выбранные услуги выполняют разные мастера. Выберите мастера для первой процедуры — администратор подберёт время для остальных.';
+      $('#masterOptions').innerHTML = list.map(m => {
         const active = state.master === m.id;
         return `
         <button type="button" data-master-id="${m.id}" class="master-card relative text-left sm:text-center p-4 sm:p-6 rounded-3xl border transition-all duration-300 flex sm:flex-col items-center gap-4 active:scale-[0.99] ${active ? 'border-bronze-400 bg-white shadow-sm' : 'border-bronze-200 bg-white/50 hover:border-bronze-300 hover:bg-white'}">
@@ -720,7 +854,7 @@
           <span>
             <span class="block font-serif text-xl tracking-wide">${m.name}</span>
             <span class="block text-[10px] uppercase tracking-[0.25em] text-bronze-700 mt-1">${m.role}</span>
-            <span class="block text-xs text-slate-500 mt-2">${m.exp}</span>
+            <span class="block text-xs text-slate-500 mt-2">${m.spec}</span>
           </span>
         </button>`;
       }).join('');
@@ -817,6 +951,9 @@
     function openModal(opts = {}) {
       resetState();
       if (opts.service) state.services.add(opts.service);
+      const pre = SERVICES.find(s => s.id === opts.service);
+      const preMaster = MASTERS.find(m => m.id === opts.master);
+      modalCat = pre ? pre.cat : (preMaster ? preMaster.cats[0] : activeCat);
       if (opts.master) state.master = opts.master;
       currentShownTotal = 0;
       $('#totalPrice').textContent = '0';
