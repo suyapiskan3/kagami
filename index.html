@@ -3,15 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="theme-color" content="#FAF6F0">
+  <meta name="theme-color" content="#FBF6F2">
   <meta name="format-detection" content="telephone=no">
   <title>Кагами — салон красоты в Южно-Сахалинске</title>
-  <meta name="description" content="Салон красоты «Кагами» в Южно-Сахалинске, ул. Чехова, 41. Волосы, педикюр, косметология, LPG-массаж, лазерная эпиляция и пирсинг. Онлайн-запись.">
+  <meta name="description" content="Салон красоты «Кагами» в Южно-Сахалинске, ул. Чехова, 41. Волосы, педикюр, косметология, LPG-массаж, лазерная эпиляция и пирсинг. Онлайн-запись через DIKIDI.">
 
   <!-- Tailwind CSS -->
-  <!-- Настройки подключения к Google Таблице (см. README) -->
-  <script src="config.js"></script>
-
   <script src="https://cdn.tailwindcss.com/3.4.16"></script>
   <script>
     if (window.tailwind) tailwind.config = {
@@ -20,23 +17,26 @@
         extend: {
           colors: {
             cream: {
-              DEFAULT: '#FAF6F0',
-              100: '#F5EEE4',
-              200: '#EDE3D5',
-              300: '#E2D5C3'
+              DEFAULT: '#FBF6F2',
+              100: '#F7EDE6',
+              200: '#F0E0D6',
+              300: '#E6CFC2'
             },
-            bronze: {
-              50:  '#F8F3EC',
-              100: '#F0E6D8',
-              200: '#E3D3BC',
-              300: '#D4BE9E',
-              400: '#C5A880',
-              500: '#B3926A',
-              600: '#977652',
-              700: '#785D41',
-              800: '#5A4632',
-              900: '#3D3023'
-            }
+            // тёплый красный
+            brand: {
+              50:  '#FDF4F1',
+              100: '#FBE6E0',
+              200: '#F5C9BD',
+              300: '#EBA391',
+              400: '#DE735F',
+              500: '#CF4E3B',
+              600: '#B83A2B',
+              700: '#982F23',
+              800: '#77251C',
+              900: '#511913'
+            },
+            // тёплый тёмный для подвала и плашек
+            ink: '#2A1714'
           },
           fontFamily: {
             sans: ['Manrope', 'system-ui', 'sans-serif'],
@@ -49,7 +49,7 @@
   </script>
 
   <!-- Шрифты -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23F07A7F'/%3E%3Cstop offset='.4' stop-color='%23D62B3A'/%3E%3Cstop offset='1' stop-color='%237A0E1C'/%3E%3C/linearGradient%3E%3Cmask id='m'%3E%3Crect width='120' height='120' fill='%23fff'/%3E%3Cg stroke='%23000' stroke-width='6' stroke-linecap='round' fill='none'%3E%3Cpath d='M52 30 Q30 22 4 28M50 52 Q26 50 2 60M52 76 Q34 82 12 98M68 30 Q90 22 116 28M70 52 Q94 50 118 60M68 76 Q86 82 108 98'/%3E%3C/g%3E%3C/mask%3E%3C/defs%3E%3Cg transform='rotate(35 60 60)'%3E%3Cpath mask='url(%23m)' fill='url(%23g)' d='M60 100 C 42 116, 8 106, 8 66 C 8 30, 34 8, 60 6 C 86 8, 112 30, 112 66 C 112 106, 78 116, 60 100 Z'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23F2907A'/%3E%3Cstop offset='.4' stop-color='%23DB4A36'/%3E%3Cstop offset='1' stop-color='%237E1C12'/%3E%3C/linearGradient%3E%3Cmask id='m'%3E%3Crect width='120' height='120' fill='%23fff'/%3E%3Cg stroke='%23000' stroke-width='6' stroke-linecap='round' fill='none'%3E%3Cpath d='M52 30 Q30 22 4 28M50 52 Q26 50 2 60M52 76 Q34 82 12 98M68 30 Q90 22 116 28M70 52 Q94 50 118 60M68 76 Q86 82 108 98'/%3E%3C/g%3E%3C/mask%3E%3C/defs%3E%3Cg transform='rotate(35 60 60)'%3E%3Cpath mask='url(%23m)' fill='url(%23g)' d='M60 100 C 42 116, 8 106, 8 66 C 8 30, 34 8, 60 6 C 86 8, 112 30, 112 66 C 112 106, 78 116, 60 100 Z'/%3E%3C/g%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
@@ -65,18 +65,12 @@
     .no-scrollbar::-webkit-scrollbar { display: none; }
     .no-scrollbar { scrollbar-width: none; }
     .scrollbar-thin::-webkit-scrollbar { width: 6px; height: 6px; }
-    .scrollbar-thin::-webkit-scrollbar-thumb { background: #D4BE9E; border-radius: 9999px; }
+    .scrollbar-thin::-webkit-scrollbar-thumb { background: #EBA391; border-radius: 9999px; }
 
-    .modal-enter { animation: modalIn .35s cubic-bezier(.2,.8,.2,1) both; }
-    .backdrop-enter { animation: fadeIn .3s ease-out both; }
-    .step-enter { animation: stepIn .4s ease-out both; }
-    .shake { animation: shake .4s; }
+    .fade-in { animation: fadeIn .5s ease-out both; }
     .reveal { opacity: 0; transform: translateY(24px); transition: opacity .9s ease, transform .9s ease; }
     .reveal.is-visible { opacity: 1; transform: none; }
-    @keyframes modalIn { from { opacity: 0; transform: translateY(28px) scale(.98); } to { opacity: 1; transform: none; } }
-    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-    @keyframes stepIn { from { opacity: 0; transform: translateX(14px); } to { opacity: 1; transform: none; } }
-    @keyframes shake { 0%,100%{transform:translateX(0)} 25%{transform:translateX(-6px)} 75%{transform:translateX(6px)} }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
     @keyframes shimmer { 0%,100% { opacity: .35; } 50% { opacity: .7; } }
     .shimmer { animation: shimmer 6s ease-in-out infinite; }
 
@@ -93,10 +87,10 @@
   <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
     <defs>
       <linearGradient id="kg-red" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stop-color="#F07A7F"/>
-        <stop offset=".35" stop-color="#D62B3A"/>
-        <stop offset=".7" stop-color="#B3182B"/>
-        <stop offset="1" stop-color="#7A0E1C"/>
+        <stop offset="0" stop-color="#F2907A"/>
+        <stop offset=".35" stop-color="#DB4A36"/>
+        <stop offset=".7" stop-color="#B8301F"/>
+        <stop offset="1" stop-color="#7E1C12"/>
       </linearGradient>
       <mask id="kg-cuts" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="120">
         <rect width="120" height="120" fill="#fff"/>
@@ -113,7 +107,7 @@
     <symbol id="kagami-leaf" viewBox="0 0 120 120">
       <g transform="rotate(35 60 60)">
         <path mask="url(#kg-cuts)" fill="url(#kg-red)" d="M60 100 C 42 116, 8 106, 8 66 C 8 30, 34 8, 60 6 C 86 8, 112 30, 112 66 C 112 106, 78 116, 60 100 Z"/>
-        <path d="M60 104 L60 12" stroke="#FCD9DB" stroke-opacity=".6" stroke-width="1.6" stroke-linecap="round"/>
+        <path d="M60 104 L60 12" stroke="#FDE0D6" stroke-opacity=".6" stroke-width="1.6" stroke-linecap="round"/>
         <path d="M60 100 Q58 110 52 118" stroke="url(#kg-red)" stroke-width="3" stroke-linecap="round" fill="none"/>
       </g>
     </symbol>
@@ -121,16 +115,16 @@
 
 
   <!-- ===================== ПЛАШКА СКИДКИ ===================== -->
-  <div class="bg-slate-900 text-cream text-[11px] sm:text-xs tracking-[0.25em] uppercase">
+  <div class="bg-ink text-cream text-[11px] sm:text-xs tracking-[0.25em] uppercase">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-9 flex items-center justify-center gap-3">
-      <span class="w-1 h-1 rounded-full bg-bronze-400"></span>
+      <span class="w-1 h-1 rounded-full bg-brand-400"></span>
       <span>Скидка 5% при оплате наличными</span>
-      <span class="w-1 h-1 rounded-full bg-bronze-400"></span>
+      <span class="w-1 h-1 rounded-full bg-brand-400"></span>
     </div>
   </div>
 
   <!-- ===================== HEADER ===================== -->
-  <header id="header" class="sticky top-0 z-40 bg-cream/85 backdrop-blur-md border-b border-bronze-200/50 transition-shadow duration-300">
+  <header id="header" class="sticky top-0 z-40 bg-cream/85 backdrop-blur-md border-b border-brand-200/50 transition-shadow duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16 sm:h-24 gap-4">
         <!-- Логотип -->
@@ -138,29 +132,29 @@
           <svg class="absolute left-0 top-1/2 -translate-y-[58%] w-12 h-12 sm:w-16 sm:h-16 transition-transform duration-700 group-hover:rotate-6" aria-hidden="true"><use href="#kagami-leaf"/></svg>
           <span class="relative leading-none">
             <span class="block font-script text-[1.9rem] sm:text-[2.4rem] text-slate-900">Кагами</span>
-            <span class="block mt-1 pl-1 uppercase tracking-[0.32em] text-[8px] sm:text-[9px] text-bronze-700">салон красоты</span>
+            <span class="block mt-1 pl-1 uppercase tracking-[0.32em] text-[8px] sm:text-[9px] text-brand-700">салон красоты</span>
           </span>
         </a>
 
         <!-- Навигация (десктоп) -->
         <nav class="hidden lg:flex items-center gap-10 text-[13px] uppercase tracking-[0.2em]">
-          <a href="#services" class="hover:text-bronze-700 transition-colors">Услуги</a>
-          <a href="#masters" class="hover:text-bronze-700 transition-colors">Мастера</a>
-          <a href="#contacts" class="hover:text-bronze-700 transition-colors">Контакты</a>
+          <a href="#services" class="hover:text-brand-700 transition-colors">Услуги</a>
+          <a href="#masters" class="hover:text-brand-700 transition-colors">Мастера</a>
+          <a href="#contacts" class="hover:text-brand-700 transition-colors">Контакты</a>
         </nav>
 
         <div class="flex items-center gap-2 sm:gap-6">
           <div class="hidden xl:block text-right text-sm leading-relaxed">
-            <a href="tel:+74242556565" class="block font-medium hover:text-bronze-700 transition-colors">+7 (4242) 55-65-65</a>
+            <a href="tel:+74242556565" class="block font-medium hover:text-brand-700 transition-colors">+7 (4242) 55-65-65</a>
             <span class="block text-xs text-slate-500">Ежедневно 10:00 — 20:00</span>
           </div>
-          <button data-open-booking class="hidden sm:inline-flex items-center gap-2 bg-bronze-400 hover:bg-bronze-500 text-slate-900 hover:text-white text-[13px] font-medium uppercase tracking-[0.18em] px-7 py-3.5 rounded-full transition-all duration-500">
+          <a href="https://dikidi.ru/2031683" target="_blank" rel="noopener" class="hidden sm:inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white text-[13px] font-medium uppercase tracking-[0.18em] px-7 py-3.5 rounded-full transition-all duration-500">
             Записаться
-          </button>
-          <a href="tel:+74242556565" class="lg:hidden w-11 h-11 rounded-full border border-bronze-300 text-bronze-700 flex items-center justify-center active:scale-95 transition-transform" aria-label="Позвонить">
+          </a>
+          <a href="tel:+74242556565" class="lg:hidden w-11 h-11 rounded-full border border-brand-300 text-brand-700 flex items-center justify-center active:scale-95 transition-transform" aria-label="Позвонить">
             <i class="fa-solid fa-phone text-sm"></i>
           </a>
-          <button id="mobileMenuBtn" aria-expanded="false" class="lg:hidden w-11 h-11 rounded-full border border-bronze-300 flex items-center justify-center transition-colors" aria-label="Меню">
+          <button id="mobileMenuBtn" aria-expanded="false" class="lg:hidden w-11 h-11 rounded-full border border-brand-300 flex items-center justify-center transition-colors" aria-label="Меню">
             <span id="menuIconOpen" class="inline-flex"><i class="fa-solid fa-bars-staggered"></i></span><span id="menuIconClose" class="hidden"><i class="fa-solid fa-xmark text-lg"></i></span>
           </button>
         </div>
@@ -168,21 +162,21 @@
 
       <!-- Мобильное меню -->
       <div id="mobileMenu" class="lg:hidden hidden pb-6">
-        <div class="bg-white/70 rounded-3xl border border-bronze-200/60 p-6 space-y-5 text-sm">
-          <nav class="flex flex-col divide-y divide-bronze-100 font-serif text-xl tracking-wide">
+        <div class="bg-white/70 rounded-3xl border border-brand-200/60 p-6 space-y-5 text-sm">
+          <nav class="flex flex-col divide-y divide-brand-100 font-serif text-xl tracking-wide">
             <a href="#services" class="mobile-link py-3">Услуги и цены</a>
             <a href="#masters" class="mobile-link py-3">Мастера</a>
             <a href="#contacts" class="mobile-link py-3">Контакты</a>
           </nav>
           <div class="space-y-3 pt-2 text-slate-600">
-            <div class="flex items-start gap-3"><i class="fa-solid fa-location-dot text-bronze-500 w-4 mt-0.5"></i> ул. Чехова, 41 (1 этаж)</div>
-            <a href="tel:+74242556565" class="flex items-center gap-3 text-slate-900 font-medium"><i class="fa-solid fa-phone text-bronze-500 w-4"></i> +7 (4242) 55-65-65</a>
-            <a href="tel:+79147597171" class="flex items-center gap-3 text-slate-900 font-medium"><i class="fa-solid fa-mobile-screen text-bronze-500 w-4"></i> +7 (914) 759-71-71</a>
-            <div class="flex items-center gap-3"><i class="fa-regular fa-clock text-bronze-500 w-4"></i> Ежедневно с 10:00 до 20:00</div>
+            <div class="flex items-start gap-3"><i class="fa-solid fa-location-dot text-brand-500 w-4 mt-0.5"></i> ул. Чехова, 41 (1 этаж)</div>
+            <a href="tel:+74242556565" class="flex items-center gap-3 text-slate-900 font-medium"><i class="fa-solid fa-phone text-brand-500 w-4"></i> +7 (4242) 55-65-65</a>
+            <a href="tel:+79147597171" class="flex items-center gap-3 text-slate-900 font-medium"><i class="fa-solid fa-mobile-screen text-brand-500 w-4"></i> +7 (914) 759-71-71</a>
+            <div class="flex items-center gap-3"><i class="fa-regular fa-clock text-brand-500 w-4"></i> Ежедневно с 10:00 до 20:00</div>
           </div>
-          <button data-open-booking class="w-full bg-bronze-400 text-slate-900 text-[13px] font-medium uppercase tracking-[0.18em] py-4 rounded-full">
+          <a href="https://dikidi.ru/2031683" target="_blank" rel="noopener" class="block text-center w-full bg-brand-600 text-white text-[13px] font-medium uppercase tracking-[0.18em] py-4 rounded-full">
             Записаться онлайн
-          </button>
+          </a>
         </div>
       </div>
     </div>
@@ -192,43 +186,43 @@
 
     <!-- ===================== HERO ===================== -->
     <section class="relative overflow-hidden">
-      <div class="absolute -top-40 right-0 w-[36rem] h-[36rem] bg-bronze-100/70 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -top-40 right-0 w-[36rem] h-[36rem] bg-brand-100/70 rounded-full blur-3xl pointer-events-none"></div>
       <div class="absolute bottom-0 -left-40 w-[28rem] h-[28rem] bg-white/60 rounded-full blur-3xl pointer-events-none"></div>
 
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-16 sm:pt-24 sm:pb-28 lg:pt-32 lg:pb-40 grid lg:grid-cols-12 gap-14 lg:gap-10 items-center">
         <div class="lg:col-span-7">
-          <p class="flex items-center gap-4 text-[11px] sm:text-xs uppercase tracking-[0.35em] text-bronze-700">
-            <span class="w-10 h-px bg-bronze-400"></span> Салон красоты<span class="hidden sm:inline">&nbsp;· Южно-Сахалинск</span>
+          <p class="flex items-center gap-4 text-[11px] sm:text-xs uppercase tracking-[0.35em] text-brand-700">
+            <span class="w-10 h-px bg-brand-400"></span> Салон красоты<span class="hidden sm:inline">&nbsp;· Южно-Сахалинск</span>
           </p>
           <h1 class="mt-8 font-serif font-normal text-[2.15rem] leading-[1.15] sm:text-6xl lg:text-[4.25rem] lg:leading-[1.1] tracking-wide">
-            Твоё пространство <em class="text-bronze-600">красоты</em> и&nbsp;уверенности в&nbsp;<span class="whitespace-nowrap">Южно-Сахалинске</span>
+            Твоё пространство <em class="text-brand-600">красоты</em> и&nbsp;уверенности в&nbsp;<span class="min-[380px]:whitespace-nowrap">Южно-Сахалинске</span>
           </h1>
           <p class="mt-8 text-base sm:text-lg text-slate-600 max-w-xl leading-loose">
             Волосы, педикюр, косметология, LPG-массаж, лазерная эпиляция и пирсинг — всё в одном пространстве. Спокойная атмосфера, внимательные мастера и профессиональная косметика.
           </p>
 
           <div class="mt-10 sm:mt-12 flex flex-col sm:flex-row gap-4">
-            <button data-open-booking class="inline-flex items-center justify-center gap-3 bg-bronze-400 hover:bg-bronze-500 text-slate-900 hover:text-white text-[13px] font-medium uppercase tracking-[0.2em] px-10 py-5 rounded-full transition-all duration-500 active:scale-[0.98]">
+            <a href="https://dikidi.ru/2031683" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-3 bg-brand-600 hover:bg-brand-700 text-white text-[13px] font-medium uppercase tracking-[0.2em] px-10 py-5 rounded-full transition-all duration-500 active:scale-[0.98]">
               Выбрать время <i class="fa-solid fa-arrow-right-long"></i>
-            </button>
-            <a href="#services" class="inline-flex items-center justify-center gap-3 border border-slate-900/15 hover:border-bronze-400 text-[13px] font-medium uppercase tracking-[0.2em] px-10 py-5 rounded-full transition-all duration-500">
+            </a>
+            <a href="#services" class="inline-flex items-center justify-center gap-3 border border-slate-900/15 hover:border-brand-400 text-[13px] font-medium uppercase tracking-[0.2em] px-10 py-5 rounded-full transition-all duration-500">
               Каталог услуг
             </a>
           </div>
 
           <!-- Плашка скидки и рейтинг -->
           <div class="mt-10 flex flex-wrap items-center gap-4">
-          <div class="inline-flex items-center gap-4 bg-white/70 border border-bronze-200 rounded-2xl pl-3 pr-6 py-3">
-            <span class="w-11 h-11 rounded-full bg-bronze-50 border border-bronze-200 text-bronze-700 flex items-center justify-center font-serif text-lg">5%</span>
+          <div class="inline-flex items-center gap-4 bg-white/70 border border-brand-200 rounded-2xl pl-3 pr-6 py-3">
+            <span class="w-11 h-11 rounded-full bg-brand-50 border border-brand-200 text-brand-700 flex items-center justify-center font-serif text-lg">5%</span>
             <span class="text-sm leading-snug">
               <span class="block font-medium">Скидка 5% при оплате наличными</span>
               <span class="block text-xs text-slate-500">на все услуги салона</span>
             </span>
           </div>
-          <a href="https://2gis.ru/yuzhnosakhalinsk/search/parikmakherskie_uslugi/rubricId/305/firm/12385427256248922/142.736983%2C46.954391?m=142.728032%2C46.958628%2F10.29" target="_blank" rel="noopener" class="inline-flex items-center gap-3 px-2 py-3 hover:text-bronze-700 transition-colors">
+          <a href="https://2gis.ru/yuzhnosakhalinsk/search/parikmakherskie_uslugi/rubricId/305/firm/12385427256248922/142.736983%2C46.954391?m=142.728032%2C46.958628%2F10.29" target="_blank" rel="noopener" class="inline-flex items-center gap-3 px-2 py-3 hover:text-brand-700 transition-colors">
             <span class="font-serif text-3xl tracking-wide">4.9</span>
             <span class="text-sm leading-snug">
-              <span class="block text-bronze-500 text-xs tracking-[0.2em]">★★★★★</span>
+              <span class="block text-brand-500 text-xs tracking-[0.2em]">★★★★★</span>
               <span class="block text-xs text-slate-500">124 оценки в 2ГИС</span>
             </span>
           </a>
@@ -238,17 +232,17 @@
         <!-- Плейсхолдер фото: арка-зеркало -->
         <div class="lg:col-span-5 relative">
           <div class="relative mx-auto w-[calc(100%-2rem)] max-w-[19rem] sm:w-full sm:max-w-md">
-            <div class="absolute -inset-4 sm:-inset-6 rounded-t-full rounded-b-[2.5rem] border border-bronze-300/70"></div>
-            <div class="relative aspect-[3/4] rounded-t-full rounded-b-[2rem] overflow-hidden bg-gradient-to-b from-cream-100 via-bronze-100 to-bronze-300">
+            <div class="absolute -inset-4 sm:-inset-6 rounded-t-full rounded-b-[2.5rem] border border-brand-300/70"></div>
+            <div class="relative aspect-[3/4] rounded-t-full rounded-b-[2rem] overflow-hidden bg-gradient-to-b from-cream-100 via-brand-100 to-brand-300">
               <div class="shimmer absolute inset-x-10 top-16 bottom-1/3 rounded-t-full bg-gradient-to-b from-white/80 to-transparent"></div>
               <div class="absolute inset-0 flex flex-col items-center justify-end text-center p-8 pb-12">
-                <span class="w-14 h-14 rounded-full border border-bronze-700/30 flex items-center justify-center text-bronze-700"><i class="fa-regular fa-image"></i></span>
-                <p class="mt-5 font-serif text-xl sm:text-2xl tracking-wide text-bronze-900">Здесь будет ваше фото</p>
-                <p class="mt-2 text-xs uppercase tracking-[0.25em] text-bronze-800/70">интерьер или работа мастера</p>
+                <span class="w-14 h-14 rounded-full border border-brand-700/30 flex items-center justify-center text-brand-700"><i class="fa-regular fa-image"></i></span>
+                <p class="mt-5 font-serif text-xl sm:text-2xl tracking-wide text-brand-900">Здесь будет ваше фото</p>
+                <p class="mt-2 text-xs uppercase tracking-[0.25em] text-brand-800/70">интерьер или работа мастера</p>
               </div>
             </div>
-            <div class="absolute -left-2 sm:-left-14 bottom-24 bg-cream/95 backdrop-blur border border-bronze-200 rounded-2xl px-5 py-4 shadow-sm hidden sm:block">
-              <div class="text-[10px] uppercase tracking-[0.3em] text-bronze-700">Открыто</div>
+            <div class="absolute -left-2 sm:-left-14 bottom-24 bg-cream/95 backdrop-blur border border-brand-200 rounded-2xl px-5 py-4 shadow-sm hidden sm:block">
+              <div class="text-[10px] uppercase tracking-[0.3em] text-brand-700">Открыто</div>
               <div class="mt-1 font-serif text-lg tracking-wide">10:00 — 20:00</div>
             </div>
           </div>
@@ -256,19 +250,19 @@
       </div>
 
       <!-- Инфо-строка -->
-      <div class="relative border-t border-bronze-200/60">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-bronze-200/60">
+      <div class="relative border-t border-brand-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-brand-200/60">
           <div class="py-6 sm:py-8 sm:pr-8 flex items-center gap-4">
-            <i class="fa-solid fa-location-dot text-bronze-500"></i>
+            <i class="fa-solid fa-location-dot text-brand-500"></i>
             <span class="text-sm"><span class="block text-[10px] uppercase tracking-[0.3em] text-slate-500">Адрес</span>ул. Чехова, 41 (1 этаж)</span>
           </div>
           <div class="py-6 sm:py-8 sm:px-8 flex items-center gap-4">
-            <i class="fa-regular fa-clock text-bronze-500"></i>
+            <i class="fa-regular fa-clock text-brand-500"></i>
             <span class="text-sm"><span class="block text-[10px] uppercase tracking-[0.3em] text-slate-500">Время работы</span>Ежедневно с 10:00 до 20:00</span>
           </div>
           <div class="py-6 sm:py-8 sm:pl-8 flex items-center gap-4">
-            <i class="fa-solid fa-phone text-bronze-500"></i>
-            <a href="tel:+74242556565" class="text-sm hover:text-bronze-700 transition-colors"><span class="block text-[10px] uppercase tracking-[0.3em] text-slate-500">Телефон</span>+7 (4242) 55-65-65</a>
+            <i class="fa-solid fa-phone text-brand-500"></i>
+            <a href="tel:+74242556565" class="text-sm hover:text-brand-700 transition-colors"><span class="block text-[10px] uppercase tracking-[0.3em] text-slate-500">Телефон</span>+7 (4242) 55-65-65</a>
           </div>
         </div>
       </div>
@@ -278,9 +272,9 @@
     <section class="py-24 sm:py-36 bg-white/50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="reveal max-w-3xl mx-auto text-center">
-          <p class="text-[11px] uppercase tracking-[0.35em] text-bronze-700">鏡 · Кагами</p>
+          <p class="text-[11px] uppercase tracking-[0.35em] text-brand-700">鏡 · Кагами</p>
           <h2 class="mt-6 font-serif font-normal text-3xl sm:text-5xl leading-tight tracking-wide">
-            «Кагами» по-японски — <em class="text-bronze-600">зеркало</em>
+            «Кагами» по-японски — <em class="text-brand-600">зеркало</em>
           </h2>
           <p class="mt-8 text-slate-600 leading-loose">
             Мы хотим, чтобы каждый взгляд в зеркало после визита к нам приносил радость. Поэтому подбираем образ вместе с вами, без спешки и шаблонов.
@@ -289,17 +283,17 @@
 
         <div class="mt-20 sm:mt-28 grid sm:grid-cols-3 gap-12 sm:gap-10">
           <div class="reveal text-center">
-            <span class="mx-auto w-16 h-16 rounded-full border border-bronze-300 text-bronze-600 flex items-center justify-center"><i class="fa-solid fa-feather-pointed"></i></span>
+            <span class="mx-auto w-16 h-16 rounded-full border border-brand-300 text-brand-600 flex items-center justify-center"><i class="fa-solid fa-feather-pointed"></i></span>
             <h3 class="mt-6 font-serif text-xl tracking-wide">Индивидуальный подход</h3>
             <p class="mt-3 text-sm text-slate-500 leading-relaxed max-w-xs mx-auto">Консультация перед каждой услугой и рекомендации по домашнему уходу.</p>
           </div>
           <div class="reveal text-center">
-            <span class="mx-auto w-16 h-16 rounded-full border border-bronze-300 text-bronze-600 flex items-center justify-center"><i class="fa-solid fa-droplet"></i></span>
+            <span class="mx-auto w-16 h-16 rounded-full border border-brand-300 text-brand-600 flex items-center justify-center"><i class="fa-solid fa-droplet"></i></span>
             <h3 class="mt-6 font-serif text-xl tracking-wide">Профессиональная косметика</h3>
             <p class="mt-3 text-sm text-slate-500 leading-relaxed max-w-xs mx-auto">Проверенные средства для волос, кожи лица и тела.</p>
           </div>
           <div class="reveal text-center">
-            <span class="mx-auto w-16 h-16 rounded-full border border-bronze-300 text-bronze-600 flex items-center justify-center"><i class="fa-solid fa-mug-saucer"></i></span>
+            <span class="mx-auto w-16 h-16 rounded-full border border-brand-300 text-brand-600 flex items-center justify-center"><i class="fa-solid fa-mug-saucer"></i></span>
             <h3 class="mt-6 font-serif text-xl tracking-wide">Атмосфера отдыха</h3>
             <p class="mt-3 text-sm text-slate-500 leading-relaxed max-w-xs mx-auto">Тишина, ароматный чай и время, посвящённое только вам.</p>
           </div>
@@ -312,7 +306,7 @@
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="reveal flex flex-col md:flex-row md:items-end md:justify-between gap-6">
           <div>
-            <p class="flex items-center gap-4 text-[11px] uppercase tracking-[0.35em] text-bronze-700"><span class="w-10 h-px bg-bronze-400"></span> Каталог услуг</p>
+            <p class="flex items-center gap-4 text-[11px] uppercase tracking-[0.35em] text-brand-700"><span class="w-10 h-px bg-brand-400"></span> Каталог услуг</p>
             <h2 class="mt-6 font-serif font-normal text-4xl sm:text-5xl tracking-wide">Услуги и цены</h2>
           </div>
           <p class="text-sm text-slate-500 max-w-sm leading-relaxed">Указаны начальные цены. Точная стоимость зависит от объёма работы и уточняется на консультации.</p>
@@ -321,22 +315,22 @@
         <div id="serviceTabs" role="tablist" aria-label="Разделы услуг" class="no-scrollbar mt-14 sm:mt-20 -mx-4 px-4 sm:mx-0 sm:px-0 flex sm:flex-wrap gap-2 sm:gap-3 overflow-x-auto"></div>
 
         <div id="servicesPanel" class="mt-10 sm:mt-14">
-          <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 pb-6 border-b border-bronze-200">
+          <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 pb-6 border-b border-brand-200">
             <div>
               <h3 id="catTitle" class="font-serif text-3xl sm:text-4xl tracking-wide"></h3>
               <p id="catDesc" class="mt-3 text-sm text-slate-500 leading-relaxed max-w-xl"></p>
             </div>
-            <p id="catCount" class="text-[11px] uppercase tracking-[0.25em] text-bronze-700 whitespace-nowrap"></p>
+            <p id="catCount" class="text-[11px] uppercase tracking-[0.25em] text-brand-700 whitespace-nowrap"></p>
           </div>
           <div id="servicesList"></div>
-          <p id="catNote" class="hidden mt-6 text-xs text-slate-500"><i class="fa-solid fa-circle-info text-bronze-500 mr-1"></i> Есть противопоказания, необходима консультация специалиста.</p>
+          <p id="catNote" class="hidden mt-6 text-xs text-slate-500"><i class="fa-solid fa-circle-info text-brand-500 mr-1"></i> Есть противопоказания, необходима консультация специалиста.</p>
         </div>
 
-        <div class="reveal mt-12 flex flex-col sm:flex-row items-center justify-between gap-6 bg-white/70 border border-bronze-200 rounded-3xl px-6 sm:px-10 py-7">
+        <div class="reveal mt-12 flex flex-col sm:flex-row items-center justify-between gap-6 bg-white/70 border border-brand-200 rounded-3xl px-6 sm:px-10 py-7">
           <p class="text-sm text-center sm:text-left"><span class="font-medium">Скидка 5% при оплате наличными</span> <span class="text-slate-500">— действует на все услуги.</span></p>
-          <button data-open-booking class="w-full sm:w-auto shrink-0 bg-slate-900 hover:bg-bronze-600 text-cream text-[13px] font-medium uppercase tracking-[0.2em] px-8 py-4 rounded-full transition-colors duration-500">
+          <a href="https://dikidi.ru/2031683" target="_blank" rel="noopener" class="inline-flex justify-center w-full sm:w-auto shrink-0 bg-ink hover:bg-brand-600 text-cream text-[13px] font-medium uppercase tracking-[0.2em] px-8 py-4 rounded-full transition-colors duration-500">
             Записаться
-          </button>
+          </a>
         </div>
       </div>
     </section>
@@ -345,7 +339,7 @@
     <section id="masters" class="scroll-mt-16 sm:scroll-mt-24 py-24 sm:py-36 bg-white/50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="reveal text-center max-w-2xl mx-auto">
-          <p class="text-[11px] uppercase tracking-[0.35em] text-bronze-700">Команда</p>
+          <p class="text-[11px] uppercase tracking-[0.35em] text-brand-700">Команда</p>
           <h2 class="mt-6 font-serif font-normal text-4xl sm:text-5xl tracking-wide">Наши мастера</h2>
           <p class="mt-6 text-slate-600 leading-loose">Стилисты, мастера педикюра и косметологи, которые регулярно проходят обучение.</p>
         </div>
@@ -357,16 +351,16 @@
     <!-- ===================== CTA ===================== -->
     <section class="py-24 sm:py-36">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="reveal relative overflow-hidden rounded-[2.5rem] bg-slate-900 text-cream px-6 py-16 sm:px-16 sm:py-24 text-center">
-          <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[40rem] h-[40rem] rounded-full border border-bronze-400/20"></div>
-          <div class="absolute -top-20 left-1/2 -translate-x-1/2 w-[28rem] h-[28rem] rounded-full border border-bronze-400/10"></div>
+        <div class="reveal relative overflow-hidden rounded-[2.5rem] bg-ink text-cream px-6 py-16 sm:px-16 sm:py-24 text-center">
+          <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[40rem] h-[40rem] rounded-full border border-brand-400/20"></div>
+          <div class="absolute -top-20 left-1/2 -translate-x-1/2 w-[28rem] h-[28rem] rounded-full border border-brand-400/10"></div>
           <div class="relative">
-            <p class="text-[11px] uppercase tracking-[0.35em] text-bronze-300">Онлайн-запись</p>
-            <h2 class="mt-6 font-serif font-normal text-3xl sm:text-5xl tracking-wide leading-tight">Найдите время <em class="text-bronze-300">для себя</em></h2>
-            <p class="mt-6 text-cream/70 max-w-lg mx-auto leading-loose">Выберите услугу, мастера и удобное время — администратор перезвонит для подтверждения.</p>
-            <button data-open-booking class="mt-10 inline-flex items-center gap-3 bg-bronze-400 hover:bg-bronze-300 text-slate-900 text-[13px] font-medium uppercase tracking-[0.2em] px-10 py-5 rounded-full transition-colors duration-500">
+            <p class="text-[11px] uppercase tracking-[0.35em] text-brand-300">Онлайн-запись</p>
+            <h2 class="mt-6 font-serif font-normal text-3xl sm:text-5xl tracking-wide leading-tight">Найдите время <em class="text-brand-300">для себя</em></h2>
+            <p class="mt-6 text-cream/70 max-w-lg mx-auto leading-loose">Выберите услугу, мастера и свободное время в онлайн-записи — запись сразу попадёт в журнал салона.</p>
+            <a href="https://dikidi.ru/2031683" target="_blank" rel="noopener" class="mt-10 inline-flex items-center gap-3 bg-brand-500 hover:bg-brand-400 text-white text-[13px] font-medium uppercase tracking-[0.2em] px-10 py-5 rounded-full transition-colors duration-500">
               Записаться <i class="fa-solid fa-arrow-right-long"></i>
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -376,7 +370,7 @@
     <section id="contacts" class="scroll-mt-16 sm:scroll-mt-24 pb-24 sm:pb-36">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         <div class="reveal">
-          <p class="flex items-center gap-4 text-[11px] uppercase tracking-[0.35em] text-bronze-700"><span class="w-10 h-px bg-bronze-400"></span> Контакты</p>
+          <p class="flex items-center gap-4 text-[11px] uppercase tracking-[0.35em] text-brand-700"><span class="w-10 h-px bg-brand-400"></span> Контакты</p>
           <h2 class="mt-6 font-serif font-normal text-4xl sm:text-5xl tracking-wide">Ждём вас в гости</h2>
           <dl class="mt-12 space-y-8">
             <div>
@@ -390,23 +384,23 @@
             <div>
               <dt class="text-[10px] uppercase tracking-[0.3em] text-slate-500">Телефон</dt>
               <dd class="mt-2 font-serif text-xl tracking-wide space-y-1">
-                <a href="tel:+74242556565" class="block hover:text-bronze-700 transition-colors">+7 (4242) 55-65-65</a>
-                <a href="tel:+79147597171" class="block hover:text-bronze-700 transition-colors">+7 (914) 759-71-71</a>
+                <a href="tel:+74242556565" class="block hover:text-brand-700 transition-colors">+7 (4242) 55-65-65</a>
+                <a href="tel:+79147597171" class="block hover:text-brand-700 transition-colors">+7 (914) 759-71-71</a>
               </dd>
             </div>
           </dl>
-          <a href="https://2gis.ru/yuzhnosakhalinsk/search/parikmakherskie_uslugi/rubricId/305/firm/12385427256248922/142.736983%2C46.954391?m=142.728032%2C46.958628%2F10.29" target="_blank" rel="noopener" class="mt-12 inline-flex items-center gap-3 border border-slate-900/15 hover:border-bronze-400 text-[13px] font-medium uppercase tracking-[0.2em] px-8 py-4 rounded-full transition-colors duration-500">
-            <i class="fa-solid fa-map-location-dot text-bronze-600"></i> Открыть в 2ГИС
+          <a href="https://2gis.ru/yuzhnosakhalinsk/search/parikmakherskie_uslugi/rubricId/305/firm/12385427256248922/142.736983%2C46.954391?m=142.728032%2C46.958628%2F10.29" target="_blank" rel="noopener" class="mt-12 inline-flex items-center gap-3 border border-slate-900/15 hover:border-brand-400 text-[13px] font-medium uppercase tracking-[0.2em] px-8 py-4 rounded-full transition-colors duration-500">
+            <i class="fa-solid fa-map-location-dot text-brand-600"></i> Открыть в 2ГИС
           </a>
         </div>
 
         <!-- Плейсхолдер карты -->
-        <div class="reveal relative aspect-[4/3] rounded-[2rem] overflow-hidden bg-cream-100 border border-bronze-200">
+        <div class="reveal relative aspect-[4/3] rounded-[2rem] overflow-hidden bg-cream-100 border border-brand-200">
           <div class="absolute inset-0 opacity-60" style="background-image: linear-gradient(#E3D3BC 1px, transparent 1px), linear-gradient(90deg, #E3D3BC 1px, transparent 1px); background-size: 48px 48px;"></div>
           <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-6">
             <span class="relative flex items-center justify-center">
-              <span class="absolute w-24 h-24 rounded-full bg-bronze-300/30 animate-ping"></span>
-              <span class="relative w-16 h-16 rounded-full bg-slate-900 text-bronze-300 flex items-center justify-center text-xl"><i class="fa-solid fa-location-dot"></i></span>
+              <span class="absolute w-24 h-24 rounded-full bg-brand-300/30 animate-ping"></span>
+              <span class="relative w-16 h-16 rounded-full bg-ink text-brand-300 flex items-center justify-center text-xl"><i class="fa-solid fa-location-dot"></i></span>
             </span>
             <p class="mt-8 font-serif text-2xl tracking-wide">ул. Чехова, 41</p>
             <p class="mt-2 text-xs uppercase tracking-[0.25em] text-slate-500">1 этаж · Южно-Сахалинск</p>
@@ -418,7 +412,7 @@
   </main>
 
   <!-- ===================== FOOTER ===================== -->
-  <footer class="bg-slate-900 text-cream/80">
+  <footer class="bg-ink text-cream/80">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
       <div class="grid md:grid-cols-3 gap-12">
         <div>
@@ -426,24 +420,24 @@
           <svg class="absolute left-0 top-1/2 -translate-y-[58%] w-16 h-16 transition-transform duration-700 group-hover:rotate-6" aria-hidden="true"><use href="#kagami-leaf"/></svg>
           <span class="relative leading-none">
             <span class="block font-script text-[2.4rem] text-cream">Кагами</span>
-            <span class="block mt-1 pl-1 uppercase tracking-[0.32em] text-[9px] text-bronze-300">салон красоты</span>
+            <span class="block mt-1 pl-1 uppercase tracking-[0.32em] text-[9px] text-brand-300">салон красоты</span>
           </span>
         </a>
           <p class="mt-6 text-sm leading-relaxed text-cream/60 max-w-xs">Пространство красоты и уверенности в центре Южно-Сахалинска.</p>
         </div>
         <div class="space-y-3 text-sm">
-          <div class="text-[10px] uppercase tracking-[0.3em] text-bronze-300 mb-5">Контакты</div>
-          <div class="flex items-start gap-3"><i class="fa-solid fa-location-dot text-bronze-400 mt-1 w-4"></i> г. Южно-Сахалинск, ул. Чехова, 41 (1 этаж)</div>
-          <a href="tel:+74242556565" class="flex items-center gap-3 hover:text-bronze-300 transition-colors"><i class="fa-solid fa-phone text-bronze-400 w-4"></i> +7 (4242) 55-65-65</a>
-          <a href="tel:+79147597171" class="flex items-center gap-3 hover:text-bronze-300 transition-colors"><i class="fa-solid fa-mobile-screen text-bronze-400 w-4"></i> +7 (914) 759-71-71</a>
-          <div class="flex items-center gap-3"><i class="fa-regular fa-clock text-bronze-400 w-4"></i> Ежедневно с 10:00 до 20:00</div>
+          <div class="text-[10px] uppercase tracking-[0.3em] text-brand-300 mb-5">Контакты</div>
+          <div class="flex items-start gap-3"><i class="fa-solid fa-location-dot text-brand-400 mt-1 w-4"></i> г. Южно-Сахалинск, ул. Чехова, 41 (1 этаж)</div>
+          <a href="tel:+74242556565" class="flex items-center gap-3 hover:text-brand-300 transition-colors"><i class="fa-solid fa-phone text-brand-400 w-4"></i> +7 (4242) 55-65-65</a>
+          <a href="tel:+79147597171" class="flex items-center gap-3 hover:text-brand-300 transition-colors"><i class="fa-solid fa-mobile-screen text-brand-400 w-4"></i> +7 (914) 759-71-71</a>
+          <div class="flex items-center gap-3"><i class="fa-regular fa-clock text-brand-400 w-4"></i> Ежедневно с 10:00 до 20:00</div>
         </div>
         <div>
-          <div class="text-[10px] uppercase tracking-[0.3em] text-bronze-300 mb-5">Мы в соцсетях</div>
+          <div class="text-[10px] uppercase tracking-[0.3em] text-brand-300 mb-5">Мы в соцсетях</div>
           <div class="flex gap-3">
-            <a href="#" class="w-11 h-11 rounded-full border border-cream/15 flex items-center justify-center hover:bg-bronze-400 hover:text-slate-900 hover:border-bronze-400 transition-all duration-500" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
-            <a href="#" class="w-11 h-11 rounded-full border border-cream/15 flex items-center justify-center hover:bg-bronze-400 hover:text-slate-900 hover:border-bronze-400 transition-all duration-500" aria-label="ВКонтакте"><i class="fa-brands fa-vk"></i></a>
-            <a href="#" class="w-11 h-11 rounded-full border border-cream/15 flex items-center justify-center hover:bg-bronze-400 hover:text-slate-900 hover:border-bronze-400 transition-all duration-500" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="w-11 h-11 rounded-full border border-cream/15 flex items-center justify-center hover:bg-brand-500 hover:text-white hover:border-brand-500 transition-all duration-500" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#" class="w-11 h-11 rounded-full border border-cream/15 flex items-center justify-center hover:bg-brand-500 hover:text-white hover:border-brand-500 transition-all duration-500" aria-label="ВКонтакте"><i class="fa-brands fa-vk"></i></a>
+            <a href="#" class="w-11 h-11 rounded-full border border-cream/15 flex items-center justify-center hover:bg-brand-500 hover:text-white hover:border-brand-500 transition-all duration-500" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
           </div>
           <p class="mt-6 text-xs text-cream/50">Скидка 5% при оплате наличными.</p>
         </div>
@@ -451,142 +445,30 @@
 
       <div class="mt-14 pt-8 border-t border-cream/10 flex flex-col sm:flex-row items-center justify-between gap-5 text-xs text-cream/40">
         <span class="text-center sm:text-left">© <span id="year"></span> Салон красоты «Кагами». Все права защищены.</span>
-        <a href="admin.html" class="inline-flex items-center gap-2 text-cream/70 hover:text-cream border border-cream/15 hover:border-bronze-400 px-5 py-2.5 rounded-full uppercase tracking-[0.2em] text-[11px] transition-colors">
-          <i class="fa-solid fa-lock text-[10px]"></i> Вход для администратора
-        </a>
+        <a href="https://dikidi.ru/2031683" target="_blank" rel="noopener" class="inline-flex items-center gap-2 hover:text-cream transition-colors">Онлайн-запись в DIKIDI <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+
       </div>
     </div>
 
   </footer>
 
   <!-- ===================== МОБИЛЬНАЯ ПАНЕЛЬ ЗАПИСИ ===================== -->
-  <div id="mobileBar" class="sm:hidden fixed inset-x-0 bottom-0 z-30 bg-cream/90 backdrop-blur-md border-t border-bronze-200 px-4 pt-3 pb-safe">
+  <div id="mobileBar" class="sm:hidden fixed inset-x-0 bottom-0 z-30 bg-cream/90 backdrop-blur-md border-t border-brand-200 px-4 pt-3 pb-safe">
     <div class="flex items-center gap-3">
-      <a href="tel:+74242556565" class="w-14 h-14 shrink-0 rounded-full border border-bronze-300 bg-white/70 flex items-center justify-center text-bronze-700 active:scale-95 transition-transform" aria-label="Позвонить">
+      <a href="tel:+74242556565" class="w-14 h-14 shrink-0 rounded-full border border-brand-300 bg-white/70 flex items-center justify-center text-brand-700 active:scale-95 transition-transform" aria-label="Позвонить">
         <i class="fa-solid fa-phone"></i>
       </a>
-      <button data-open-booking class="flex-1 h-14 rounded-full bg-bronze-400 active:bg-bronze-500 text-slate-900 text-[13px] font-medium uppercase tracking-[0.18em] flex items-center justify-center gap-2 active:scale-[0.98] transition-transform">
+      <a href="https://dikidi.ru/2031683" target="_blank" rel="noopener" class="flex-1 h-14 rounded-full bg-brand-600 active:bg-brand-700 text-white text-[13px] font-medium uppercase tracking-[0.18em] flex items-center justify-center gap-2 active:scale-[0.98] transition-transform">
         Записаться онлайн
-      </button>
-    </div>
-  </div>
-
-  <!-- ===================== МОДАЛЬНОЕ ОКНО ЗАПИСИ ===================== -->
-  <div id="bookingModal" class="fixed inset-0 z-50 hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <div id="modalBackdrop" class="absolute inset-0 bg-slate-900/60 backdrop-blur-sm backdrop-enter"></div>
-
-    <div class="relative h-full w-full flex items-end sm:items-center justify-center sm:p-4">
-      <div id="modalCard" class="modal-enter relative bg-cream w-full sm:max-w-2xl max-h-[92vh] max-h-[92dvh] sm:max-h-[90vh] flex flex-col rounded-t-[2rem] sm:rounded-[2rem] shadow-2xl">
-
-        <!-- Шапка модалки -->
-        <div class="px-5 pt-3 sm:px-9 sm:pt-8 pb-5 border-b border-bronze-200/70">
-          <div class="sm:hidden mx-auto mb-4 h-1 w-12 rounded-full bg-bronze-200"></div>
-          <div class="flex items-start justify-between gap-4">
-            <div>
-              <p class="text-[10px] sm:text-[11px] uppercase tracking-[0.3em] text-bronze-700">Онлайн-запись · Шаг <span id="stepNum">1</span> из 4</p>
-              <h3 id="modalTitle" class="mt-2 font-serif font-normal text-2xl sm:text-3xl tracking-wide">Выберите услуги</h3>
-            </div>
-            <button id="closeModal" class="w-11 h-11 shrink-0 rounded-full border border-bronze-200 hover:border-bronze-400 flex items-center justify-center transition-colors" aria-label="Закрыть">
-              <i class="fa-solid fa-xmark"></i>
-            </button>
-          </div>
-          <!-- Прогресс -->
-          <div class="mt-6 grid grid-cols-4 gap-2" id="progress">
-            <div class="h-[3px] rounded-full bg-bronze-100 overflow-hidden"><div class="progress-fill h-full bg-bronze-400 transition-all duration-500" style="width:0%"></div></div>
-            <div class="h-[3px] rounded-full bg-bronze-100 overflow-hidden"><div class="progress-fill h-full bg-bronze-400 transition-all duration-500" style="width:0%"></div></div>
-            <div class="h-[3px] rounded-full bg-bronze-100 overflow-hidden"><div class="progress-fill h-full bg-bronze-400 transition-all duration-500" style="width:0%"></div></div>
-            <div class="h-[3px] rounded-full bg-bronze-100 overflow-hidden"><div class="progress-fill h-full bg-bronze-400 transition-all duration-500" style="width:0%"></div></div>
-          </div>
-        </div>
-
-        <!-- Тело модалки -->
-        <div id="modalBody" class="flex-1 overflow-y-auto overscroll-contain scrollbar-thin p-4 sm:p-9">
-
-          <!-- Шаг 1: Услуги -->
-          <div class="step" data-step="1">
-            <div id="modalTabs" class="no-scrollbar -mx-4 px-4 sm:mx-0 sm:px-0 flex sm:flex-wrap gap-2 overflow-x-auto pb-4"></div>
-            <div id="serviceOptions" class="space-y-2.5"></div>
-          </div>
-
-          <!-- Шаг 2: Мастер -->
-          <div class="step hidden" data-step="2">
-            <p id="masterHint" class="hidden mb-4 text-sm text-slate-500"></p>
-            <div id="masterOptions" class="grid sm:grid-cols-2 gap-3"></div>
-          </div>
-
-          <!-- Шаг 3: Время -->
-          <div class="step hidden" data-step="3">
-            <p class="text-sm text-slate-500 mb-5"><i class="fa-regular fa-calendar text-bronze-500 mr-2"></i>Ближайшая дата: <span id="bookingDate" class="font-medium text-slate-900"></span></p>
-            <div id="timeOptions" class="grid grid-cols-3 sm:grid-cols-5 gap-2.5 sm:gap-3"></div>
-          </div>
-
-          <!-- Шаг 4: Контакты -->
-          <div class="step hidden" data-step="4">
-            <form id="contactForm" class="space-y-5" novalidate>
-              <div>
-                <label for="clientName" class="block text-[11px] uppercase tracking-[0.25em] text-slate-500 mb-2">Имя</label>
-                <div class="relative">
-                  <i class="fa-regular fa-user absolute left-5 top-1/2 -translate-y-1/2 text-bronze-500"></i>
-                  <input id="clientName" type="text" autocomplete="name" enterkeyhint="next" placeholder="Как к вам обращаться?" class="w-full text-base pl-12 pr-4 py-4 rounded-full border border-bronze-200 bg-white focus:border-bronze-400 focus:ring-4 focus:ring-bronze-100 outline-none transition-all">
-                </div>
-                <p id="nameError" class="hidden mt-2 ml-5 text-xs text-rose-600">Введите имя (минимум 2 символа)</p>
-              </div>
-              <div>
-                <label for="clientPhone" class="block text-[11px] uppercase tracking-[0.25em] text-slate-500 mb-2">Телефон</label>
-                <div class="relative">
-                  <i class="fa-solid fa-phone absolute left-5 top-1/2 -translate-y-1/2 text-bronze-500 text-sm"></i>
-                  <input id="clientPhone" type="tel" inputmode="tel" autocomplete="tel" enterkeyhint="done" placeholder="+7 (___) ___-__-__" class="w-full text-base pl-12 pr-4 py-4 rounded-full border border-bronze-200 bg-white focus:border-bronze-400 focus:ring-4 focus:ring-bronze-100 outline-none transition-all">
-                </div>
-                <p id="phoneError" class="hidden mt-2 ml-5 text-xs text-rose-600">Введите номер полностью: +7 (XXX) XXX-XX-XX</p>
-              </div>
-
-              <!-- Сводка -->
-              <div class="rounded-3xl bg-white border border-bronze-200 p-6 text-sm space-y-3">
-                <div class="font-serif text-lg tracking-wide mb-4">Ваша запись</div>
-                <div class="flex justify-between gap-4"><span class="text-slate-500">Услуги</span><span id="sumServices" class="text-right font-medium"></span></div>
-                <div class="flex justify-between gap-4"><span class="text-slate-500">Мастер</span><span id="sumMaster" class="font-medium"></span></div>
-                <div class="flex justify-between gap-4"><span class="text-slate-500">Время</span><span id="sumTime" class="font-medium"></span></div>
-                <div class="pt-3 mt-3 border-t border-bronze-100 text-xs text-bronze-700"><i class="fa-solid fa-tag mr-1"></i> При оплате наличными — скидка 5%</div>
-              </div>
-              <p class="text-xs text-slate-400">Нажимая «Подтвердить», вы соглашаетесь на обработку персональных данных.</p>
-            </form>
-          </div>
-        </div>
-
-        <!-- Подвал модалки -->
-        <div class="px-4 sm:px-9 pt-4 pb-safe sm:pb-8 border-t border-bronze-200/70 flex items-center justify-between gap-3 bg-cream sm:rounded-b-[2rem]">
-          <div>
-            <div class="text-[10px] uppercase tracking-[0.25em] text-slate-500">Итого</div>
-            <div class="font-serif text-2xl sm:text-3xl whitespace-nowrap"><span id="totalPrefix" class="hidden">от </span><span id="totalPrice">0</span> ₽</div>
-          </div>
-          <div class="flex gap-2">
-            <button id="prevBtn" class="hidden h-12 sm:h-14 w-12 sm:w-auto sm:px-6 rounded-full border border-bronze-300 hover:border-bronze-500 flex items-center justify-center transition-colors" aria-label="Назад">
-              <i class="fa-solid fa-arrow-left-long"></i><span class="hidden sm:inline ml-2 text-[12px] uppercase tracking-[0.18em] font-medium">Назад</span>
-            </button>
-            <button id="nextBtn" class="h-12 sm:h-14 px-6 sm:px-8 rounded-full bg-bronze-400 hover:bg-bronze-500 text-slate-900 hover:text-white text-[12px] sm:text-[13px] font-medium uppercase tracking-[0.18em] whitespace-nowrap transition-all duration-300 active:scale-[0.98] disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-bronze-400 disabled:hover:text-slate-900">
-              Далее <i class="fa-solid fa-arrow-right-long ml-1"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ===================== TOAST ===================== -->
-  <div id="toast" class="fixed z-[60] left-1/2 bottom-24 sm:bottom-8 -translate-x-1/2 translate-y-32 opacity-0 transition-all duration-500 ease-out pointer-events-none w-[calc(100%-2rem)] max-w-md" role="status" aria-live="polite">
-    <div class="bg-slate-900 text-cream rounded-full shadow-2xl p-3 pr-8 flex items-center gap-4">
-      <span id="toastIconOk" class="w-12 h-12 shrink-0 rounded-full bg-bronze-400 text-slate-900 flex items-center justify-center"><i class="fa-solid fa-check"></i></span>
-      <span id="toastIconErr" class="hidden w-12 h-12 shrink-0 rounded-full bg-rose-400 text-slate-900 flex items-center justify-center"><i class="fa-solid fa-exclamation"></i></span>
-      <div>
-        <div id="toastTitle" class="font-serif text-lg tracking-wide">Успешно!</div>
-        <div id="toastText" class="text-sm text-cream/70">Ждем вас в Кагами</div>
-      </div>
+      </a>
     </div>
   </div>
 
   <!-- ===================== JAVASCRIPT ===================== -->
   <script>
-    // ---------- Данные ----------
+    // Онлайн-запись салона в DIKIDI — все кнопки «Записаться» ведут сюда
+    const BOOKING_URL = 'https://dikidi.ru/2031683';
+
     // Разделы и прайс (цены «от», по данным салона в 2ГИС, обновлено 24.07.2026)
     const CATEGORIES = [
       { id: 'hair',     name: 'Волосы',            icon: 'fa-scissors',        desc: 'Стрижки, окрашивание, укладки и уход. Стоимость зависит от длины и густоты волос.' },
@@ -659,47 +541,39 @@
     ];
 
     const MASTERS = [
-      { id: 'anna',     name: 'Анна',     role: 'Стилист',            cats: ['hair'],                       exp: '10 лет опыта', initials: 'А', gradient: 'from-cream-100 to-bronze-200', spec: 'Стрижки, укладки, уход за волосами' },
-      { id: 'marina',   name: 'Марина',   role: 'Колорист',           cats: ['hair'],                       exp: '8 лет опыта',  initials: 'М', gradient: 'from-bronze-50 to-bronze-300',  spec: 'Airtouch, шатуш, балаяж, тонирование' },
-      { id: 'victoria', name: 'Виктория', role: 'Мастер педикюра',    cats: ['pedicure', 'piercing'],       exp: '6 лет опыта',  initials: 'В', gradient: 'from-white to-bronze-200',      spec: 'Педикюр, проблемная стопа, пирсинг' },
-      { id: 'elena',    name: 'Елена',    role: 'Косметолог',         cats: ['face', 'cosmo', 'lpg', 'laser'], exp: '9 лет опыта', initials: 'Е', gradient: 'from-cream-200 to-bronze-300', spec: 'Уход за лицом, инъекции, LPG, лазер' }
+      { id: 'anna',     name: 'Анна',     role: 'Стилист',            exp: '10 лет опыта', initials: 'А', gradient: 'from-cream-100 to-brand-200', spec: 'Стрижки, укладки, уход за волосами' },
+      { id: 'marina',   name: 'Марина',   role: 'Колорист',           exp: '8 лет опыта',  initials: 'М', gradient: 'from-brand-50 to-brand-300',  spec: 'Airtouch, шатуш, балаяж, тонирование' },
+      { id: 'victoria', name: 'Виктория', role: 'Мастер педикюра',    exp: '6 лет опыта',  initials: 'В', gradient: 'from-white to-brand-200',      spec: 'Педикюр, проблемная стопа, пирсинг' },
+      { id: 'elena',    name: 'Елена',    role: 'Косметолог',         exp: '9 лет опыта', initials: 'Е', gradient: 'from-cream-200 to-brand-300', spec: 'Уход за лицом, инъекции, LPG, лазер' }
     ];
-
-    const TIMES = ['10:00', '12:00', '14:00', '16:00', '18:00'];
-    const STORAGE_KEY = 'kagami_bookings';
-    const STEP_TITLES = ['Выберите услуги', 'Выберите мастера', 'Выберите время', 'Ваши контакты'];
 
     // ---------- Утилиты ----------
     const $  = (sel, root = document) => root.querySelector(sel);
     const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
     const formatPrice = n => n.toLocaleString('ru-RU');
-    const escapeHtml = str => String(str).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    const bookAttrs = `href="${BOOKING_URL}" target="_blank" rel="noopener"`;
 
-    function loadBookings() {
-      try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || []; }
-      catch (e) { return []; }
-    }
-    function saveBookings(list) {
-      try { localStorage.setItem(STORAGE_KEY, JSON.stringify(list)); }
-      catch (e) { console.warn('localStorage недоступен', e); }
+    function plural(n, forms) {
+      const n10 = n % 10, n100 = n % 100;
+      if (n10 === 1 && n100 !== 11) return forms[0];
+      if (n10 >= 2 && n10 <= 4 && (n100 < 10 || n100 >= 20)) return forms[1];
+      return forms[2];
     }
 
-    // ---------- Рендер секций сайта ----------
-    let activeCat = CATEGORIES[0].id;   // раздел каталога на странице
-    let modalCat = CATEGORIES[0].id;    // раздел в форме записи
-
+    // ---------- Каталог услуг ----------
+    let activeCat = CATEGORIES[0].id;
     const catById = id => CATEGORIES.find(c => c.id === id);
     const servicesOf = cat => SERVICES.filter(s => s.cat === cat);
     const minPrice = cat => Math.min(...servicesOf(cat).map(s => s.price));
 
     function tabClass(active) {
-      return `shrink-0 inline-flex items-center gap-2 rounded-full border px-5 py-3 text-[12px] font-medium uppercase tracking-[0.18em] whitespace-nowrap transition-all duration-300 ${active ? 'bg-slate-900 border-slate-900 text-cream' : 'border-bronze-200 bg-white/60 hover:border-bronze-400 text-slate-700'}`;
+      return `shrink-0 inline-flex items-center gap-2 rounded-full border px-5 py-3 text-[12px] font-medium uppercase tracking-[0.18em] whitespace-nowrap transition-all duration-300 ${active ? 'bg-ink border-ink text-cream' : 'border-brand-200 bg-white/60 hover:border-brand-400 text-slate-700'}`;
     }
 
     function renderServicesSection() {
       $('#serviceTabs').innerHTML = CATEGORIES.map(c => `
         <button type="button" role="tab" aria-selected="${c.id === activeCat}" data-cat="${c.id}" class="cat-tab ${tabClass(c.id === activeCat)}">
-          <i class="fa-solid ${c.icon} ${c.id === activeCat ? 'text-bronze-300' : 'text-bronze-500'}"></i> ${c.name}
+          <i class="fa-solid ${c.icon} ${c.id === activeCat ? 'text-brand-300' : 'text-brand-500'}"></i> ${c.name}
         </button>`).join('');
 
       const cat = catById(activeCat);
@@ -711,15 +585,15 @@
 
       const listEl = $('#servicesList');
       listEl.innerHTML = list.map((s, i) => `
-        <div class="group flex items-center gap-4 sm:gap-8 py-5 sm:py-6 border-b border-bronze-200/70 transition-colors duration-300 hover:bg-white/60 sm:px-4 sm:-mx-4 sm:rounded-2xl">
-          <span class="hidden sm:block w-10 font-serif text-xl text-bronze-400">${String(i + 1).padStart(2, '0')}</span>
+        <div class="group flex items-center gap-4 sm:gap-8 py-5 sm:py-6 border-b border-brand-200/70 transition-colors duration-300 hover:bg-white/60 sm:px-4 sm:-mx-4 sm:rounded-2xl">
+          <span class="hidden sm:block w-10 font-serif text-xl text-brand-400">${String(i + 1).padStart(2, '0')}</span>
           <h4 class="flex-1 min-w-0 font-serif text-lg sm:text-xl tracking-wide leading-snug">${s.name}</h4>
-          <span class="whitespace-nowrap"><span class="text-[11px] uppercase tracking-[0.15em] text-slate-500 mr-1">от</span><span class="font-serif text-xl sm:text-2xl">${formatPrice(s.price)}</span> <span class="font-serif text-bronze-500">₽</span></span>
-          <button data-open-booking data-preselect="${s.id}" class="shrink-0 w-11 h-11 rounded-full border border-bronze-300 group-hover:bg-bronze-400 group-hover:border-bronze-400 flex items-center justify-center transition-all duration-300" aria-label="Записаться: ${s.name}">
-            <i class="fa-solid fa-plus text-sm"></i>
-          </button>
+          <span class="whitespace-nowrap"><span class="text-[11px] uppercase tracking-[0.15em] text-slate-500 mr-1">от</span><span class="font-serif text-xl sm:text-2xl">${formatPrice(s.price)}</span> <span class="font-serif text-brand-500">₽</span></span>
+          <a ${bookAttrs} class="shrink-0 w-11 h-11 rounded-full border border-brand-300 group-hover:bg-brand-600 group-hover:border-brand-600 group-hover:text-white flex items-center justify-center transition-all duration-300" aria-label="Записаться онлайн: ${s.name} (откроется в новой вкладке)">
+            <i class="fa-solid fa-arrow-right-long text-sm -rotate-45"></i>
+          </a>
         </div>`).join('');
-      listEl.classList.remove('step-enter'); void listEl.offsetWidth; listEl.classList.add('step-enter');
+      listEl.classList.remove('fade-in'); void listEl.offsetWidth; listEl.classList.add('fade-in');
 
       $$('.cat-tab', $('#serviceTabs')).forEach(btn => btn.addEventListener('click', () => {
         activeCat = btn.dataset.cat;
@@ -727,358 +601,25 @@
       }));
     }
 
-    function plural(n, forms) {
-      const n10 = n % 10, n100 = n % 100;
-      if (n10 === 1 && n100 !== 11) return forms[0];
-      if (n10 >= 2 && n10 <= 4 && (n100 < 10 || n100 >= 20)) return forms[1];
-      return forms[2];
-    }
-
+    // ---------- Мастера ----------
     function renderMastersSection() {
       $('#mastersGrid').innerHTML = MASTERS.map(m => `
         <article class="reveal group shrink-0 w-[78%] sm:w-auto snap-start text-center">
-          <div class="relative aspect-[3/4] rounded-t-full rounded-b-[2rem] overflow-hidden bg-gradient-to-b ${m.gradient} border border-bronze-200">
+          <div class="relative aspect-[3/4] rounded-t-full rounded-b-[2rem] overflow-hidden bg-gradient-to-b ${m.gradient} border border-brand-200">
             <div class="absolute inset-x-8 top-10 bottom-1/2 rounded-t-full bg-gradient-to-b from-white/70 to-transparent"></div>
             <div class="absolute inset-0 flex items-center justify-center">
-              <span class="font-serif text-7xl sm:text-8xl text-bronze-600/70 tracking-wide transition-transform duration-700 group-hover:scale-110">${m.initials}</span>
+              <span class="font-serif text-7xl sm:text-8xl text-brand-600/60 tracking-wide transition-transform duration-700 group-hover:scale-110">${m.initials}</span>
             </div>
           </div>
           <h3 class="mt-7 font-serif text-2xl tracking-wide">${m.name}</h3>
-          <p class="mt-2 text-[11px] uppercase tracking-[0.3em] text-bronze-700">${m.role}</p>
+          <p class="mt-2 text-[11px] uppercase tracking-[0.3em] text-brand-700">${m.role}</p>
           <p class="mt-3 text-sm text-slate-500">${m.spec}</p>
           <p class="mt-1 text-xs text-slate-400">${m.exp}</p>
-          <button data-open-booking data-master="${m.id}" class="mt-6 inline-flex items-center gap-3 border border-slate-900/15 hover:border-bronze-400 hover:bg-bronze-400 text-[12px] font-medium uppercase tracking-[0.18em] px-7 py-3 rounded-full transition-all duration-500">
+          <a ${bookAttrs} class="mt-6 inline-flex items-center gap-3 border border-slate-900/15 hover:border-brand-600 hover:bg-brand-600 hover:text-white text-[12px] font-medium uppercase tracking-[0.18em] px-7 py-3 rounded-full transition-all duration-500">
             Записаться к мастеру
-          </button>
+          </a>
         </article>
       `).join('');
-    }
-
-    // ---------- Состояние формы ----------
-    const state = { step: 1, services: new Set(), master: null, time: null };
-
-    function resetState() {
-      state.step = 1;
-      state.services.clear();
-      state.master = null;
-      state.time = null;
-      $('#clientName').value = '';
-      $('#clientPhone').value = '';
-      $('#nameError').classList.add('hidden');
-      $('#phoneError').classList.add('hidden');
-      $('#clientName').classList.remove('border-rose-400');
-      $('#clientPhone').classList.remove('border-rose-400');
-    }
-
-    function getTotal() {
-      return SERVICES.filter(s => state.services.has(s.id)).reduce((sum, s) => sum + s.price, 0);
-    }
-
-    function getNextDateLabel() {
-      const now = new Date();
-      const d = new Date();
-      // если сейчас позже 18:00 — предлагаем завтра
-      if (now.getHours() >= 18) d.setDate(d.getDate() + 1);
-      const label = d.toLocaleDateString('ru-RU', { weekday: 'long', day: 'numeric', month: 'long' });
-      return { date: d, label: (now.getHours() >= 18 ? 'завтра, ' : 'сегодня, ') + label };
-    }
-
-    // ---------- Рендер шагов ----------
-    function renderServiceOptions() {
-      $('#modalTabs').innerHTML = CATEGORIES.map(c => {
-        const count = servicesOf(c.id).filter(s => state.services.has(s.id)).length;
-        const active = c.id === modalCat;
-        return `
-        <button type="button" data-cat="${c.id}" class="modal-tab shrink-0 inline-flex items-center gap-2 rounded-full border px-4 py-2.5 text-[11px] font-medium uppercase tracking-[0.15em] whitespace-nowrap transition-all duration-300 ${active ? 'bg-slate-900 border-slate-900 text-cream' : 'border-bronze-200 bg-white/60 hover:border-bronze-400'}">
-          ${c.name}${count ? `<span class="min-w-[1.25rem] h-5 px-1 rounded-full bg-bronze-400 text-slate-900 text-[10px] flex items-center justify-center tracking-normal">${count}</span>` : ''}
-        </button>`;
-      }).join('');
-
-      $('#serviceOptions').innerHTML = servicesOf(modalCat).map(s => {
-        const checked = state.services.has(s.id);
-        return `
-        <label class="flex items-center gap-4 p-4 sm:px-5 rounded-2xl border cursor-pointer transition-all duration-300 active:scale-[0.99] ${checked ? 'border-bronze-400 bg-white shadow-sm' : 'border-bronze-200 bg-white/50 hover:border-bronze-300 hover:bg-white'}">
-          <input type="checkbox" class="service-cb sr-only" value="${s.id}" ${checked ? 'checked' : ''}>
-          <span class="w-6 h-6 shrink-0 rounded-full border flex items-center justify-center transition-colors ${checked ? 'bg-bronze-400 border-bronze-400 text-slate-900' : 'border-bronze-300'}">
-            ${checked ? '<i class="fa-solid fa-check text-[10px]"></i>' : ''}
-          </span>
-          <span class="flex-1 min-w-0 font-serif text-base sm:text-lg tracking-wide leading-snug">${s.name}</span>
-          <span class="font-serif text-base sm:text-lg whitespace-nowrap">от ${formatPrice(s.price)} ₽</span>
-        </label>`;
-      }).join('');
-
-      $$('.modal-tab').forEach(btn => btn.addEventListener('click', () => {
-        modalCat = btn.dataset.cat;
-        renderServiceOptions();
-      }));
-      $$('.service-cb').forEach(cb => cb.addEventListener('change', e => {
-        e.target.checked ? state.services.add(e.target.value) : state.services.delete(e.target.value);
-        renderServiceOptions();
-        updateFooter();
-      }));
-    }
-
-    // Разделы, к которым относятся выбранные услуги
-    function selectedCats() {
-      return [...new Set(SERVICES.filter(s => state.services.has(s.id)).map(s => s.cat))];
-    }
-    // Мастера, которые выполняют все выбранные разделы; если таких нет — все мастера
-    function availableMasters() {
-      const cats = selectedCats();
-      const fit = MASTERS.filter(m => cats.every(c => m.cats.includes(c)));
-      return fit.length ? fit : MASTERS;
-    }
-
-    function renderMasterOptions() {
-      const list = availableMasters();
-      const allFit = list !== MASTERS || MASTERS.every(m => selectedCats().every(c => m.cats.includes(c)));
-      if (state.master && !list.some(m => m.id === state.master)) state.master = null;
-      const hint = $('#masterHint');
-      hint.classList.toggle('hidden', allFit);
-      hint.textContent = 'Выбранные услуги выполняют разные мастера. Выберите мастера для первой процедуры — администратор подберёт время для остальных.';
-      $('#masterOptions').innerHTML = list.map(m => {
-        const active = state.master === m.id;
-        return `
-        <button type="button" data-master-id="${m.id}" class="master-card relative text-left sm:text-center p-4 sm:p-6 rounded-3xl border transition-all duration-300 flex sm:flex-col items-center gap-4 active:scale-[0.99] ${active ? 'border-bronze-400 bg-white shadow-sm' : 'border-bronze-200 bg-white/50 hover:border-bronze-300 hover:bg-white'}">
-          ${active ? '<span class="absolute top-3 right-3 w-6 h-6 rounded-full bg-bronze-400 text-slate-900 flex items-center justify-center text-[10px]"><i class="fa-solid fa-check"></i></span>' : ''}
-          <span class="w-14 h-[4.5rem] sm:w-20 sm:h-24 shrink-0 rounded-t-full rounded-b-2xl bg-gradient-to-b ${m.gradient} border border-bronze-200 flex items-center justify-center font-serif text-2xl sm:text-3xl text-bronze-700">${m.initials}</span>
-          <span>
-            <span class="block font-serif text-xl tracking-wide">${m.name}</span>
-            <span class="block text-[10px] uppercase tracking-[0.25em] text-bronze-700 mt-1">${m.role}</span>
-            <span class="block text-xs text-slate-500 mt-2">${m.spec}</span>
-          </span>
-        </button>`;
-      }).join('');
-
-      $$('.master-card').forEach(btn => btn.addEventListener('click', () => {
-        state.master = btn.dataset.masterId;
-        renderMasterOptions();
-        updateFooter();
-      }));
-    }
-
-    function renderTimeOptions() {
-      $('#bookingDate').textContent = getNextDateLabel().label;
-      $('#timeOptions').innerHTML = TIMES.map(t => {
-        const active = state.time === t;
-        return `
-        <button type="button" data-time="${t}" class="time-btn py-4 rounded-full border font-serif text-lg tracking-wide transition-all duration-300 active:scale-95 ${active ? 'border-bronze-400 bg-bronze-400 text-slate-900 shadow-sm' : 'border-bronze-200 bg-white/60 hover:border-bronze-400 hover:bg-white'}">
-          ${t}
-        </button>`;
-      }).join('');
-
-      $$('.time-btn').forEach(btn => btn.addEventListener('click', () => {
-        state.time = btn.dataset.time;
-        renderTimeOptions();
-        updateFooter();
-      }));
-    }
-
-    function renderSummary() {
-      const names = SERVICES.filter(s => state.services.has(s.id)).map(s => s.name).join(', ');
-      const master = MASTERS.find(m => m.id === state.master);
-      $('#sumServices').textContent = names || '—';
-      $('#sumMaster').textContent = master ? master.name : '—';
-      $('#sumTime').textContent = state.time ? `${getNextDateLabel().label.split(',')[0]}, ${state.time}` : '—';
-    }
-
-    function canProceed() {
-      if (state.step === 1) return state.services.size > 0;
-      if (state.step === 2) return !!state.master;
-      if (state.step === 3) return !!state.time;
-      return true;
-    }
-
-    function updateFooter() {
-      animateNumber($('#totalPrice'), getTotal());
-      $('#totalPrefix').classList.toggle('hidden', getTotal() === 0);
-
-      const next = $('#nextBtn');
-      next.disabled = !canProceed();
-      next.innerHTML = state.step === 4
-        ? '<i class="fa-solid fa-check mr-1"></i> Подтвердить'
-        : 'Далее <i class="fa-solid fa-arrow-right-long ml-1"></i>';
-      $('#prevBtn').classList.toggle('hidden', state.step === 1);
-      $('#prevBtn').classList.toggle('inline-flex', state.step !== 1);
-    }
-
-    let currentShownTotal = 0;
-    function animateNumber(el, target) {
-      const start = currentShownTotal;
-      const diff = target - start;
-      if (diff === 0) { el.textContent = formatPrice(target); return; }
-      const duration = 400;
-      const t0 = performance.now();
-      function frame(t) {
-        const p = Math.min((t - t0) / duration, 1);
-        const eased = 1 - Math.pow(1 - p, 3);
-        el.textContent = formatPrice(Math.round(start + diff * eased));
-        if (p < 1) requestAnimationFrame(frame);
-      }
-      currentShownTotal = target;
-      requestAnimationFrame(frame);
-    }
-
-    function showStep(n) {
-      state.step = n;
-      $$('.step').forEach(el => {
-        const isActive = Number(el.dataset.step) === n;
-        el.classList.toggle('hidden', !isActive);
-        if (isActive) { el.classList.remove('step-enter'); void el.offsetWidth; el.classList.add('step-enter'); }
-      });
-      $('#modalBody').scrollTop = 0;
-      $('#stepNum').textContent = n;
-      $('#modalTitle').textContent = STEP_TITLES[n - 1];
-      $$('.progress-fill').forEach((bar, i) => { bar.style.width = i < n ? '100%' : '0%'; });
-
-      if (n === 1) renderServiceOptions();
-      if (n === 2) renderMasterOptions();
-      if (n === 3) renderTimeOptions();
-      if (n === 4) { renderSummary(); if (window.matchMedia('(min-width: 640px)').matches) setTimeout(() => $('#clientName').focus(), 50); }
-      updateFooter();
-    }
-
-    // ---------- Модальное окно ----------
-    function openModal(opts = {}) {
-      resetState();
-      if (opts.service) state.services.add(opts.service);
-      const pre = SERVICES.find(s => s.id === opts.service);
-      const preMaster = MASTERS.find(m => m.id === opts.master);
-      modalCat = pre ? pre.cat : (preMaster ? preMaster.cats[0] : activeCat);
-      if (opts.master) state.master = opts.master;
-      currentShownTotal = 0;
-      $('#totalPrice').textContent = '0';
-
-      $('#bookingModal').classList.remove('hidden');
-      const card = $('#modalCard');
-      card.classList.remove('modal-enter'); void card.offsetWidth; card.classList.add('modal-enter');
-      document.body.style.overflow = 'hidden';
-      showStep(1);
-      setMobileMenu(false);
-    }
-
-    function closeModal() {
-      $('#bookingModal').classList.add('hidden');
-      document.body.style.overflow = '';
-    }
-
-    // ---------- Валидация и подтверждение ----------
-    function formatPhone(value) {
-      let digits = value.replace(/\D/g, '');
-      if (digits.startsWith('8')) digits = '7' + digits.slice(1);
-      if (!digits.startsWith('7')) digits = '7' + digits;
-      digits = digits.slice(0, 11);
-      const p = digits.slice(1);
-      let out = '+7';
-      if (p.length > 0) out += ' (' + p.slice(0, 3);
-      if (p.length >= 3) out += ')';
-      if (p.length > 3) out += ' ' + p.slice(3, 6);
-      if (p.length > 6) out += '-' + p.slice(6, 8);
-      if (p.length > 8) out += '-' + p.slice(8, 10);
-      return out;
-    }
-
-    function validateContacts() {
-      const name = $('#clientName').value.trim();
-      const phoneDigits = $('#clientPhone').value.replace(/\D/g, '');
-      const nameOk = name.length >= 2;
-      const phoneOk = phoneDigits.length === 11;
-
-      $('#nameError').classList.toggle('hidden', nameOk);
-      $('#phoneError').classList.toggle('hidden', phoneOk);
-      $('#clientName').classList.toggle('border-rose-400', !nameOk);
-      $('#clientPhone').classList.toggle('border-rose-400', !phoneOk);
-
-      if (!nameOk || !phoneOk) {
-        const card = $('#modalCard');
-        card.classList.remove('shake'); void card.offsetWidth; card.classList.add('shake');
-      }
-      return nameOk && phoneOk;
-    }
-
-    const API_URL = (window.KAGAMI_CONFIG && window.KAGAMI_CONFIG.apiUrl || '').trim();
-    let sending = false;
-
-    // Отправка записи в Google Таблицу (если настроено в config.js)
-    async function sendBooking(booking) {
-      if (!API_URL) return true; // демо-режим: только localStorage
-      const ctrl = new AbortController();
-      const timer = setTimeout(() => ctrl.abort(), 20000);
-      try {
-        const res = await fetch(API_URL, {
-          method: 'POST',
-          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-          body: JSON.stringify({ action: 'add', booking }),
-          signal: ctrl.signal
-        });
-        const data = await res.json();
-        return !!data.ok;
-      } catch (e) {
-        console.warn('Не удалось отправить запись', e);
-        return false;
-      } finally {
-        clearTimeout(timer);
-      }
-    }
-
-    async function confirmBooking() {
-      if (sending || !validateContacts()) return;
-
-      const now = new Date();
-      const booking = {
-        id: now.getTime().toString(36) + Math.random().toString(36).slice(2, 6),
-        ts: now.getTime(),
-        name: $('#clientName').value.trim(),
-        phone: $('#clientPhone').value.trim(),
-        services: SERVICES.filter(s => state.services.has(s.id)).map(s => s.name),
-        master: MASTERS.find(m => m.id === state.master).name,
-        date: getNextDateLabel().date.toLocaleDateString('ru-RU', { day: '2-digit', month: '2-digit' }),
-        time: state.time,
-        total: getTotal(),
-        status: 'new',
-        createdAt: now.toLocaleString('ru-RU', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' })
-      };
-
-      const next = $('#nextBtn');
-      sending = true;
-      next.disabled = true;
-      next.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin mr-1"></i> Отправляем';
-
-      const ok = await sendBooking(booking);
-      sending = false;
-
-      if (!ok) {
-        next.disabled = false;
-        next.innerHTML = '<i class="fa-solid fa-check mr-1"></i> Подтвердить';
-        showToast(false);
-        return;
-      }
-
-      // Копия в браузере: демо-режим админки и запасной вариант
-      const list = loadBookings();
-      list.unshift(booking);
-      saveBookings(list);
-
-      closeModal();
-      showToast(true);
-    }
-
-    // ---------- Toast ----------
-    let toastTimer;
-    function showToast(ok = true) {
-      const toast = $('#toast');
-      $('#toastIconOk').classList.toggle('hidden', !ok);
-      $('#toastIconErr').classList.toggle('hidden', ok);
-      $('#toastIconErr').classList.toggle('flex', !ok);
-      $('#toastTitle').textContent = ok ? 'Успешно!' : 'Не удалось отправить';
-      $('#toastText').textContent = ok ? 'Ждем вас в Кагами' : 'Проверьте интернет или позвоните: +7 (4242) 55-65-65';
-      clearTimeout(toastTimer);
-      toast.classList.remove('translate-y-32', 'opacity-0');
-      toast.classList.add('translate-y-0', 'opacity-100');
-      toastTimer = setTimeout(() => {
-        toast.classList.add('translate-y-32', 'opacity-0');
-        toast.classList.remove('translate-y-0', 'opacity-100');
-      }, ok ? 3500 : 6000);
     }
 
     // ---------- Мобильное меню ----------
@@ -1088,6 +629,8 @@
       $('#menuIconClose').classList.toggle('hidden', !open);
       $('#mobileMenuBtn').setAttribute('aria-expanded', String(open));
     }
+    $('#mobileMenuBtn').addEventListener('click', () => setMobileMenu($('#mobileMenu').classList.contains('hidden')));
+    $$('#mobileMenu a').forEach(a => a.addEventListener('click', () => setMobileMenu(false)));
 
     // ---------- Плавное появление блоков ----------
     function initReveal() {
@@ -1101,50 +644,11 @@
       items.forEach(el => io.observe(el));
     }
 
-    // ---------- События ----------
-    document.addEventListener('click', e => {
-      const trigger = e.target.closest('[data-open-booking]');
-      if (trigger) {
-        e.preventDefault();
-        openModal({ service: trigger.dataset.preselect, master: trigger.dataset.master });
-      }
-    });
-
-    $('#closeModal').addEventListener('click', closeModal);
-    $('#modalBackdrop').addEventListener('click', closeModal);
-    document.addEventListener('keydown', e => {
-      if (e.key === 'Escape' && !$('#bookingModal').classList.contains('hidden')) closeModal();
-    });
-
-    $('#nextBtn').addEventListener('click', () => {
-      if (state.step < 4) {
-        if (canProceed()) showStep(state.step + 1);
-      } else {
-        confirmBooking();
-      }
-    });
-    $('#prevBtn').addEventListener('click', () => { if (state.step > 1) showStep(state.step - 1); });
-
-    $('#contactForm').addEventListener('submit', e => { e.preventDefault(); confirmBooking(); });
-    $('#clientName').addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); $('#clientPhone').focus(); } });
-    $('#clientPhone').addEventListener('input', e => {
-      e.target.value = formatPhone(e.target.value);
-      $('#phoneError').classList.add('hidden');
-      e.target.classList.remove('border-rose-400');
-    });
-    $('#clientName').addEventListener('input', e => {
-      $('#nameError').classList.add('hidden');
-      e.target.classList.remove('border-rose-400');
-    });
-
-    $('#mobileMenuBtn').addEventListener('click', () => setMobileMenu($('#mobileMenu').classList.contains('hidden')));
-    $$('.mobile-link').forEach(a => a.addEventListener('click', () => setMobileMenu(false)));
-
     window.addEventListener('scroll', () => {
       $('#header').classList.toggle('shadow-sm', window.scrollY > 10);
     }, { passive: true });
 
-    // ---------- Инициализация ----------
+    // ---------- Старт ----------
     $('#year').textContent = new Date().getFullYear();
     renderServicesSection();
     renderMastersSection();
